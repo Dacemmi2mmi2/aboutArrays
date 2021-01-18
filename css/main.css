@@ -1,0 +1,61 @@
+@import 'reset.css';
+
+body
+{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+
+.mainContainer
+{
+    width: 70%;
+    margin: 30px auto;
+}
+@media screen and (max-width: 600px)
+{
+    .mainContainer
+    {
+        width: 95%;
+        margin: 20px auto;
+    }
+}
+
+.mainContainer section{margin: 0 0 50px 0;}
+
+
+.mainContainer h2
+{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px gray;
+}
+
+
+.mainContainer p
+{
+    font-size: 19px;
+    padding: 5px 0 2px 0;
+}
+@media screen and (max-width: 450px)
+{
+    .mainContainer p
+    {
+        font-size: 20px;
+    }
+}
+
+.mainContainer p.mLeft{margin-left: 30px;}
+
+.greenColor{color: #6a8a35;}
+.skyBlueColor{color: #8cdcfe;}
+.yellowColor{color: #dcdcaa;}
+.whiteColor{color :white;}
+.blueGreenColor{color: #43c9b0;}
+.brownColor{color: #ce9178;}
+.lightGreenColor{color: #b5ce89;}
+.blueFnArgColor{color: #569cd6}
+.pinkColor{color: #c586c0;}
+.bluePrototype{color: #44c1db;}
