@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>new Array</title>
+</head>
+<body>
+    <main class="mainContainer">
+        <section class="Array_from">
+            <h2>
+                <code>
+                    1) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+                <code>                
+                <p>
+                    <span class="greenColor">// Array.from(arrayLike)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// разбивает массивоподобные аргументы на массив</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">(</span><span class="brownColor">'string'</span><span class="whiteColor">));</span> <span class="greenColor">// ["s","t","r","i","n","g"]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">(</span><span class="lightGreenColor">142</span><span class="whiteColor">));</span> <span class="greenColor">// []</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">,</span> <span class="lightGreenColor">2</span><span class="whiteColor">,</span> <span class="lightGreenColor">3</span><span class="whiteColor">,</span> <span class="lightGreenColor">4</span><span class="whiteColor">],</span> <span class="skyBlueColor">a</span> <span class="blueFnArgColor">=></span> <span class="skyBlueColor">a</span> <span class="whiteColor">**</span> <span class="skyBlueColor">a</span><span class="whiteColor">));</span> <span class="greenColor">// [1, 4, 27, 256]</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">function</span> <span class="yellowColor">f</span><span class="whiteColor">(){</span>
+                </p>
+                <p class="mLeft">
+                    <span class="pinkColor">return</span> <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">(</span><span class="blueFnArgColor">arguments</span><span class="whiteColor">));</span> <span class="greenColor">// [1, 3, 4]</span>
+                </p>
+                <p>
+                    <span class="whiteColor">}</span>
+                </p>
+                <p>
+                    <span class="yellowColor">f</span><span class="whiteColor">(</span><span class="lightGreenColor">1</span><span class="whiteColor">,</span> <span class="lightGreenColor">3</span><span class="whiteColor">,</span> <span class="lightGreenColor">4</span><span class="whiteColor">)</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span> <span class="whiteColor">**</span> <span class="lightGreenColor">80</span><span class="whiteColor">))));</span> <span class="greenColor">//["1", "2", "0", "8", "9", "2", "5", "8", "1", "9", "6", "1", "4", "6", "2", "9", "1", "7", "4", "7", "0", "6", "1", "7", "6"]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_isArray">
+            <h2>
+                <code>
+                    2) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.isArray(obj)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает ture если обьект массив или false если обьект не массив</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">([]));</span> <span class="greenColor">// true</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">({}));</span> <span class="greenColor">// false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">));</span> <span class="greenColor">// true</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_of">
+            <h2>
+                <code>
+                    3) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">of</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>  
+                    <span class="greenColor">// Array.of()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// создает новйый экземпляр массива Array из произвольного числа аргументов, вне зависимости от числа и типа аргумента</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">of</span><span class="whiteColor">(</span><span class="lightGreenColor">7</span><span class="whiteColor">));</span> <span class="greenColor">// [7]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">(</span><span class="lightGreenColor">7</span><span class="whiteColor">));</span> <span class="greenColor">// (7) [empty * 7]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">of</span><span class="whiteColor">(</span><span class="blueGreenColor">Boolean</span><span class="whiteColor">));</span> <span class="greenColor">// [f]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">of</span><span class="whiteColor">(</span><span class="blueFnArgColor">undefined</span><span class="whiteColor">));</span> <span class="greenColor">// [undefined]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_concat">
+            <h2>
+                <code>
+                    4) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">concat</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.concat()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// обьеденяет массив с другим массивом либо с передаваемыми аргументами</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let</span> <span class="skyBlueColor">arr1</span><span class="whiteColor"> = [</span><span class="lightGreenColor">1</span><span class="whiteColor">,</span> <span class="lightGreenColor">2</span><span class="whiteColor">,</span> <span class="lightGreenColor">3</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let</span> <span class="skyBlueColor">arr2</span><span class="whiteColor"> = [</span><span class="lightGreenColor">4</span><span class="whiteColor">,</span> <span class="lightGreenColor">5</span><span class="whiteColor">,</span> <span class="lightGreenColor">6</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let</span> <span class="skyBlueColor">arrRes</span><span class="whiteColor"> = [...</span><span class="skyBlueColor">arr1</span><span class="whiteColor">, ...</span><span class="skyBlueColor">arr2</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrRes</span><span class="whiteColor">);</span><span class="greenColor"> // [1, 2, 3, 4, 5, 6]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1</span><span class="whiteColor">.</span><span class="yellowColor">concat</span><span class="whiteColor">(</span><span class="skyBlueColor">arr2</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 2, 3, 4, 5, 6]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">([...</span><span class="skyBlueColor">arr1</span><span class="whiteColor">, ...</span><span class="skyBlueColor">arr2</span><span class="whiteColor">]));</span><span class="greenColor"> // [Array(6)]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">of</span><span class="whiteColor">([...</span><span class="skyBlueColor">arr1</span><span class="whiteColor">, ...</span><span class="skyBlueColor">arr2</span><span class="whiteColor">]));</span><span class="greenColor"> // [Array(6)]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_copyWithin">
+            <h2>
+                <code>
+                    5) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">copyWithin</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.copyWithin(target, start, end)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// коприрует эелементы массива внутри него, начинающихся по индексу target. Начало копии берется по аргументу start, конец копии по аргументу end. Аргумент end по умолчанию равен длинне массива end = this.length</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">copyWithin</span><span class="whiteColor">(</span><span class="lightGreenColor">0</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">));</span><span class="greenColor"> // [4, 5, 6, 4, 5, 6]</span>            
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">copyWithin</span><span class="whiteColor">(</span><span class="lightGreenColor">0</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">));</span><span class="greenColor"> // [4, 5, 6, 4, 5, 6]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">, </span><span class="lightGreenColor">7</span><span class="whiteColor">].</span><span class="yellowColor">copyWithin</span><span class="whiteColor">(</span><span class="lightGreenColor">0</span><span class="whiteColor">, </span><span class="lightGreenColor">-2</span><span class="whiteColor">, </span><span class="lightGreenColor">-1</span><span class="whiteColor">));</span><span class="greenColor"> // [6, 3, 4, 5, 6, 7]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_entries">
+            <h2>
+                <code>
+                    6) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">entries</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="blueFnArgColor">let</span> <span class="skyBlueColor">arr</span><span class="whiteColor"> = [</span><span class="brownColor">'a'</span><span class="whiteColor">, </span> <span class="brownColor">'b'</span><span class="whiteColor">, </span> <span class="brownColor">'c'</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let</span> <span class="skyBlueColor">eArr</span><span class="whiteColor"> = </span><span class="skyBlueColor">arr</span><span class="whiteColor">.</span><span class="yellowColor">entries</span><span class="whiteColor">();</span>
+                </p>
+                <p>
+                    <span class="pinkColor">for</span><span class="whiteColor"> (</span><span class="blueFnArgColor">let</span><span class="skyBlueColor"> i </span><span class="whiteColor">= </span><span class="lightGreenColor">0</span><span class="whiteColor">; </span><span class="skyBlueColor"> i </span><span class="whiteColor">&lt; </span><span class="skyBlueColor">arr</span><span class="whiteColor">.</span><span class="skyBlueColor">length</span><span class="whiteColor">; </span><span class="skyBlueColor">i</span><span class="whiteColor">++;){</span>
+                </p>
+                <p class="mLeft">
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">eArr</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">().</span><span class="skyBlueColor">value</span><span class="whiteColor">);</span> <span class="greenColor">// выведет поочередности следующее: [0,"a"], [1, "b"], [2, "c"]</span>
+                </p>
+                <p>
+                    <span class="whiteColor">}</span>
+                </p>
+                <p>
+                    <span class="greenColor">// без цикла</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">eArr</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">().</span><span class="skyBlueColor">value</span><span class="whiteColor">);</span> <span class="greenColor"> // [0,"a"]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">eArr</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">().</span><span class="skyBlueColor">value</span><span class="whiteColor">);</span> <span class="greenColor"> // [1,"b"]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">eArr</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">().</span><span class="skyBlueColor">value</span><span class="whiteColor">);</span> <span class="greenColor"> // [2,"c"]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_every">
+            <h2>
+                <code>
+                    7) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">every</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.every(callback(item, index, array), thisArg)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// проверяет, удовлетворяют ли все эедементы массива условию, заданному в передаваемой функции</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">12</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">7</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">].</span><span class="yellowColor">every</span><span class="whiteColor">((</span><span class="skyBlueColor">item</span><span class="whiteColor">) </span><span class="blueFnArgColor">=&gt; </span><span class="whiteColor">{</span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt;= </span><span class="lightGreenColor">10</span><span class="whiteColor">}));</span> <span class="greenColor">// false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">100</span><span class="whiteColor">, </span><span class="lightGreenColor">115</span><span class="whiteColor">, </span><span class="lightGreenColor">145</span><span class="whiteColor">, </span><span class="lightGreenColor">200</span><span class="whiteColor">].</span><span class="yellowColor">every</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt;= </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span> <span class="greenColor">// true</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">244</span><span class="whiteColor">, </span><span class="brownColor">'abc'</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="brownColor">'string'</span><span class="whiteColor">].</span><span class="yellowColor">every</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; typeof </span><span class="skyBlueColor">item</span><span class="whiteColor"> === </span><span class="brownColor">'string'</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">every</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; typeof </span><span class="skyBlueColor">item</span><span class="whiteColor"> === </span><span class="brownColor">'number'</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_fill">
+            <h2>
+                <code>
+                    8) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">fill</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.fill(value, start, end)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// заполняет все элементы массива от начального (start) до конечного (end) индексов одним значением (value)</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">fill</span><span class="whiteColor">(</span><span class="lightGreenColor">34</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">));</span> <span class="greenColor"> // [1, 34, 34, 4, 5]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">fill</span><span class="whiteColor">(</span><span class="lightGreenColor">21</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">));</span> <span class="greenColor"> // [1, 2, 21, 21, 21]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">fill</span><span class="whiteColor">(</span><span class="lightGreenColor">9</span><span class="whiteColor">));</span> <span class="greenColor"> // [9, 9, 9, 9, 9]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">fill</span><span class="whiteColor">(</span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="whiteColor">-</span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="whiteColor">-</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span> <span class="greenColor"> // [1, 2, 4, 4, 5]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_filter">
+            <h2>
+                <code>
+                    9) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">filter</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.filter(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">// создает новый массив со всмеи элементами, прошедшими проверку функции</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">arrObjs</span><span class="whiteColor"> = [</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="lightGreenColor">15</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="whiteColor"> -</span><span class="lightGreenColor">1</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="lightGreenColor">0</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="lightGreenColor">3</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="lightGreenColor">12.2</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="blueFnArgColor">null</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="skyBlueColor">NaN</span><span class="whiteColor"> },</span>
+                </p>
+                <p class="mLeft">
+                    <span class="whiteColor">{ </span><span class="skyBlueColor">id: </span><span class="brownColor">'undefined'</span><span class="whiteColor"> },</span>
+                </p>
+                <p>
+                    <span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrObjs</span><span class="whiteColor">.</span><span class="yellowColor">filter</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; typeof </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="skyBlueColor">id</span><span class="whiteColor"> === </span><span class="brownColor">'number'</span><span class="whiteColor"> && !</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="skyBlueColor">id</span><span class="whiteColor">) && </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="skyBlueColor">id</span><span class="whiteColor"> !== </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // [{ id: 15 }, { id: -1 }, { id: 3 }, { id: 12.2 }]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'spray'</span><span class="whiteColor">, </span><span class="brownColor">'limit'</span><span class="whiteColor">, </span><span class="brownColor">'elite'</span><span class="whiteColor">, </span><span class="brownColor">'exuberant'</span><span class="whiteColor">, </span><span class="brownColor">'destruction'</span><span class="whiteColor">, </span><span class="brownColor">'present'</span><span class="whiteColor">].</span><span class="yellowColor">filter</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="bluePrototype">length</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">6</span><span class="whiteColor">));</span><span class="greenColor"> // ['exuberant', 'destruction', 'present']</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_find">
+            <h2>
+                <code>
+                    10) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">find</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.find(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает значение первого найденного в массиве элемента, которое удовлетворяет условию переданному в callback фукции. В противном слуучае вернет undefined</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">find</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 2</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">find</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span><span class="greenColor"> // undefined
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'string'</span><span class="whiteColor">, </span><span class="brownColor">'number'</span><span class="whiteColor">, </span><span class="brownColor">'boolean'</span><span class="whiteColor">, </span><span class="brownColor">'null'</span><span class="whiteColor">, </span><span class="brownColor">'undefined</span><span class="whiteColor">, </span><span class="brownColor">'BigInt'</span><span class="whiteColor">].</span><span class="yellowColor">find</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="bluePrototype">length</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">5</span><span class="whiteColor">));</span><span class="greenColor"> // string
+                </p>
+            </code>
+        </section>
+        <section class="Array_findIndex">
+            <h2>
+                <code>
+                    11) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">findIndex</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.findIndex(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает индекс в массиве, если элемент удовлетворяет условию проверяющей функции. В противном случае возвращается -1.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">findIndex</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 1</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">findIndex</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span><span class="greenColor"> // -1
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'string'</span><span class="whiteColor">, </span><span class="brownColor">'number'</span><span class="whiteColor">, </span><span class="brownColor">'boolean'</span><span class="whiteColor">, </span><span class="brownColor">'null'</span><span class="whiteColor">, </span><span class="brownColor">'undefined</span><span class="whiteColor">, </span><span class="brownColor">'BigInt'</span><span class="whiteColor">].</span><span class="yellowColor">findIndex</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="bluePrototype">length</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">5</span><span class="whiteColor">));</span><span class="greenColor"> // 0
+                </p>
+            </code>
+        </section>
+        <section class="Array_flat">
+            <h2>
+                <code>
+                    12) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">flat</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.flat(depth)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает новый массив, в котором все элементы вложенных подмассивов были рекурсивно "подняты" на указанный уровень depth.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, [</span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, [</span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">]]].</span><span class="yellowColor">flat</span><span class="whiteColor">());</span><span class="greenColor"> // [1, 2, 3, 4, Array(2)]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, [</span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, [</span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">]]].</span><span class="yellowColor">flat</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 2, 3, 4, 5, 6]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, [</span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, [<span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">, [</span><span class="lightGreenColor">7</span><span class="whiteColor">, </span><span class="lightGreenColor">8</span><span class="whiteColor">, [</span><span class="lightGreenColor">9</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">]]]]].</span><span class="yellowColor">flat</span><span class="whiteColor">(</span><span class="skyBlueColor">Ifnfinity</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_flatMap">
+            <h2>
+                <code>
+                    13) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">flatMap</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.flatMap(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">// сначала применяет функцию к каждому элементу, а затем преобразует полученый результат в плоскую структуру и помещает в новый массив.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">flatMap</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 4, 9, 16, 25]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">flatMap</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">[</span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">]));</span><span class="greenColor"> // [1, 4, 9, 16, 25]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">flatMap</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">[[</span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">]]));</span><span class="greenColor"> // [[1], [4], [9], [16], [25]]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_forEach">
+            <h2>
+                <code>
+                    14) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">forEach</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.forEach(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">// выполняет указанную функцию один раз для каждого элемента в массиве.</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">array </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">array</span><span class="whiteColor">.</span><span class="yellowColor">forEach</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="whiteColor">));</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 1</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 2</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 3</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 4</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 5</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">array</span><span class="whiteColor">.</span><span class="yellowColor">forEach</span><span class="whiteColor">(</span><span class="skyBlueColor">element</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">{</span>
+                </p>
+                <p class="mLeft">
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">element</span><span class="whiteColor"> ** </span><span class="lightGreenColor">3</span><span class="whiteColor">);</span>
+                </p>
+                <p>
+                    <span class="whiteColor">});</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 1</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 8</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 27</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 64</span>
+                </p>
+                <p>
+                    <span class="greenColor">// 125</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_includes">
+            <h2>
+                <code>
+                    15) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">includes</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.includes(item, index)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// определяет, содержит ли массив определённый элемент, возвращая в зависимости от этого true или false.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">].</span><span class="yellowColor">includes</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">].</span><span class="yellowColor">includes</span><span class="whiteColor">(</span><span class="lightGreenColor">4</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">].</span><span class="yellowColor">includes</span><span class="whiteColor">(</span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">].</span><span class="yellowColor">includes</span><span class="whiteColor">(</span><span class="lightGreenColor">3</span><span class="whiteColor">, -</span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_indexOf">
+            <h2>
+                <code>
+                    16) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">indexOf</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prptotype.indexOf(item, index)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">4</span><span class="whiteColor">));</span><span class="greenColor"> // -1</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">9</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 2</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, -</span><span class="lightGreenColor">3</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_join">
+            <h2>
+                <code>
+                    17) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">join</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prptotype.join()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// объединяет все элементы массива (или массивоподобного объекта) в строку</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">a </span><span class="whiteColor">= [</span><span class="brownColor">'Wind'</span><span class="whiteColor">, </span><span class="brownColor">'Water'</span><span class="whiteColor">, </span><span class="brownColor">'Fire'</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">.</span><span class="yellowColor">join</span><span class="whiteColor">());</span><span class="greenColor"> // Wind,Water,Fire</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">.</span><span class="yellowColor">join</span><span class="whiteColor">(</span><span class="brownColor">', '</span><span class="whiteColor">));</span><span class="greenColor"> // Wind, Water, Fire</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">.</span><span class="yellowColor">join</span><span class="whiteColor">(</span><span class="brownColor">' + '</span><span class="whiteColor">));</span><span class="greenColor"> // Wind + Water + Fire</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">.</span><span class="yellowColor">join</span><span class="whiteColor">(</span><span class="brownColor">''</span><span class="whiteColor">));</span><span class="greenColor"> // WindWaterFire</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_keys">
+            <h2>
+                <code>
+                    18) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">keys</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prptotype.keys()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает новый итератор массива Array Iterator, содержащий ключи каждого индекса в массиве</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">array1 </span><span class="whiteColor">= [</span><span class="brownColor">'a'</span><span class="whiteColor">, </span><span class="brownColor">'b'</span><span class="whiteColor">, </span><span class="brownColor">'c'</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">arr1Iter </span><span class="whiteColor">= </span><span class="skyBlueColor">array1</span><span class="whiteColor">.</span><span class="yellowColor">keys</span><span class="whiteColor">();</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">);</span><span class="greenColor"> // Array Iterator {}</span>
+                </p>
+                <p>
+                    <span class="greenColor">// без цикла</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">());</span><span class="greenColor"> // {value : 0, done : false}</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">());</span><span class="greenColor"> // {value : 1, done : false}</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">());</span><span class="greenColor"> // {value : 2, done : false}</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">.</span><span class="yellowColor">next</span><span class="whiteColor">());</span><span class="greenColor"> // {value : undefined, done : true}</span>
+                </p>
+                <p>
+                    <span class="greenColor">// c циклом</span>
+                </p>
+                <p>
+                    <span class="pinkColor">for</span><span class="whiteColor"> (</span><span class="blueFnArgColor">let</span><span class="skyBlueColor"> key </span><span class="blueFnArgColor">of </span><span class="skyBlueColor">arr1Iter</span><span class="whiteColor">){</span>
+                </p>
+                <p class="mLeft">
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">key</span><span class="whiteColor"><span class="whiteColor">);</span> <span class="greenColor">// выведет поочередности следующее: 0, 1, 2</span>
+                </p>
+                <p>
+                    <span class="whiteColor">}</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_lastIndexOf">
+            <h2>
+                <code>
+                    19) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prptotype.lastIndexOf(item, index)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает последний индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">, <span class="lightGreenColor">2</span></span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 3</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">, <span class="lightGreenColor">2</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">7</span><span class="whiteColor">));</span><span class="greenColor"> // -1</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">, <span class="lightGreenColor">2</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">9</span><span class="whiteColor">, <span class="lightGreenColor">2</span><span class="whiteColor">].</span><span class="yellowColor">indexOf</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, -</span><span class="lightGreenColor">3</span><span class="whiteColor">));</span><span class="greenColor"> // 3</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_map">
+            <h2>
+                <code>
+                    20) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">map</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.map(callback(item, index, arr))</span>
+                </p>
+                <p>
+                    <span class="greenColor">//  создаёт новый массив с результатом вызова указанной функции для каждого элемента массива.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 4, 9, 16, 25]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">[</span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">]));</span><span class="greenColor"> // [[1], [4], [9], [16], [25]]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">[[</span><span class="skyBlueColor">item</span><span class="whiteColor"> ** </span><span class="lightGreenColor">2</span><span class="whiteColor">]]));</span><span class="greenColor"> // [[[1]], [[4]], [[9]], [[16]], [[25]]]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_pop">
+            <h2>
+                <code>
+                    21) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">pop</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.pop()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// удаляет последний элемент из массива и возвращает его значение</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">b </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">b</span><span class="whiteColor">.</span><span class="yellowColor">pop</span><span class="whiteColor">());</span><span class="greenColor"> // 5</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">b</span><span class="whiteColor">);</span><span class="greenColor"> // [1, 2, 3, 4]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_push">
+            <h2>
+                <code>
+                    22) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">push</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.push()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// добавляет один или более элементов в конец массива и возвращает новую длину массива.</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">sports </span><span class="whiteColor">= [</span><span class="brownColor">'футбол'</span><span class="whiteColor">, </span><span class="brownColor">'баскетбол'</span><span class="whiteColor">];</span>    
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">total </span><span class="whiteColor">= </span><span class="skyBlueColor">sports</span><span class="whiteColor">.</span><span class="yellowColor">push</span><span class="whiteColor">(</span><span class="brownColor">'американский футбол'</span><span class="whiteColor">, </span><span class="brownColor">'плаванье'</span><span class="whiteColor">);</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">sports</span><span class="whiteColor">);</span><span class="greenColor"> // ['футбол', 'бейсбол', 'американский футбол', 'плаванье']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">total</span><span class="whiteColor">);</span><span class="greenColor"> // 4</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_reduce">
+            <h2>
+                <code>
+                    23) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.reduce(callback(item, index, array), accumulator)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// выполняет функцию callback один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова callback), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">c </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">d </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">32</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">c</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> + </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 15</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">c</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> + </span><span class="skyBlueColor">acum</span><span class="whiteColor">));</span><span class="greenColor"> // 15</span>
+                </p>
+                <p>
+                    <span class="greenColor">// в данном примере 0 - это начальное значение параметра accumulator, если его не зададавать, то по умолчанию он будет рааным значению первого элемента в массиве (c[0])</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">c</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor"> ? </span><span class="skyBlueColor">item</span><span class="whiteColor"> : </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 32 (самое большое число в массиве)</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">d</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">(</span><span class="skyBlueColor">acum</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor">));</span><span class="greenColor"> // 1</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">d</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">(</span><span class="skyBlueColor">acum</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                </p>
+            </code>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
