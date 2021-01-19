@@ -261,3 +261,16 @@ console.log(d.reduce((acum, item) => item > acum ? item : acum, 0)); // 32 (са
 console.log(d.reduce(acum => acum)); // 1
 console.log(d.reduce(acum => acum, 0)); // 0
 console.log('\n');
+
+
+// Array.prototype.reduceRight(callback(item, index, array), accumulator)
+// применяет функцию к аккумулятору и каждому значению массива (справа-налево), сводя его к одному значению. Метод reduceRight() выполняет функцию callback один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова callback), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.
+console.log('24) ==== Array.prototype.reduceRight() =========');
+let arrC = [1, 2, 3, 4, 5];
+let arrD = [1, 2, 32, 4, 5];
+console.log(arrC.reduceRight((acum, item) => item + acum, 0)); // 15
+console.log(arrC.reduceRight((acum, item) => item + acum)); // 15
+console.log(arrD.reduceRight((acum, item) => item > acum ? item : acum, 0)); // 32 (самое большое число в массиве)
+console.log(arrD.reduceRight(acum => acum)); // 5
+console.log(arrD.reduceRight(acum => acum, 0)); // 0
+console.log('\n');
