@@ -34,6 +34,10 @@ body
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px gray;
 }
+@media screen and (max-width: 450px)
+{
+    .mainContainer h2{font-size: 26px;}    
+}
 
 
 .mainContainer p
@@ -45,11 +49,7 @@ body
 }
 @media screen and (max-width: 450px)
 {
-    .mainContainer p
-    {
-        font-size: 20px;
-        line-height: 1.3;
-    }
+    .mainContainer p{line-height: 1.3;}
 }
 
 .mainContainer p.mLeft{margin-left: 30px;}
