@@ -738,6 +738,45 @@
                 </p>
             </code>
         </section>
+        <section class="Array_reduceRight">
+            <h2>
+                <code>
+                    24) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">reduceRight</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.reduceRight(callback(item, index, array), accumulator)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// применяет функцию к аккумулятору и каждому значению массива (справа-налево), сводя его к одному значению. Метод reduceRight() выполняет функцию callback один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова callback), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">arrC </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">arrD </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">32</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrC</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> + </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 15</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrC</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> + </span><span class="skyBlueColor">acum</span><span class="whiteColor">));</span><span class="greenColor"> // 15</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrD</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">((</span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="skyBlueColor">item</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor"> ? </span><span class="skyBlueColor">item</span><span class="whiteColor"> : </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 32 (самое большое число в массиве)</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrD</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">(</span><span class="skyBlueColor">acum</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor">));</span><span class="greenColor"> // 5</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrD</span><span class="whiteColor">.</span><span class="yellowColor">reduce</span><span class="whiteColor">(</span><span class="skyBlueColor">acum</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">acum</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                </p>
+                <p>
+                    <span class="greenColor">// в данном примере 0 - это начальное значение параметра accumulator, если его не зададавать, то по умолчанию он будет рааным значению последнего элемента в массиве (arrD[-1])</span>
+                </p>
+            </code>
+        </section>
     </main>
     <script src="js/main.js"></script>
 </body>
