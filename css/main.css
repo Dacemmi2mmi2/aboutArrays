@@ -17,8 +17,9 @@ body
 {
     .mainContainer
     {
-        width: 95%;
-        margin: 20px auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 5px 0 5px;
     }
 }
 
@@ -27,6 +28,7 @@ body
 
 .mainContainer h2
 {
+    width: 100%;
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
@@ -36,7 +38,9 @@ body
 
 .mainContainer p
 {
+    width: 100%;
     font-size: 19px;
+    line-height: 1.1;
     padding: 5px 0 2px 0;
 }
 @media screen and (max-width: 450px)
@@ -44,6 +48,7 @@ body
     .mainContainer p
     {
         font-size: 20px;
+        line-height: 1.3;
     }
 }
 
