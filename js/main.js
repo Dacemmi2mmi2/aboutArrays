@@ -1,6 +1,6 @@
 // функции массивов
 
-// array.from(arrayLike)
+// array.from(arrayLike, mapFn)
 // разбивает массиво подобные аргументы на массив
 console.log('1) ==== Array.from() ========');
 console.log(Array.from('string')); // ["s","t","r","i","n","g"]
@@ -11,6 +11,8 @@ function f(){
 }
 f(1,3,4)
 console.log(Array.from(String(BigInt(2 ** 80)))); //["1", "2", "0", "8", "9", "2", "5", "8", "1", "9", "6", "1", "4", "6", "2", "9", "1", "7", "4", "7", "0", "6", "1", "7", "6"]
+console.log(Array.from({length : 5}, (item, index) => [item, index])); // [[undefined, 0], [undefined, 1], [undefined, 2], [undefined, 3], [undefined, 4]]
+console.log(Array.from({length : 5}, (_, i) => i)); // [0, 1, 2, 3, 4]
 console.log('\n');
 
 
