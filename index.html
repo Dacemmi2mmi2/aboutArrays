@@ -17,7 +17,7 @@
             </h2>
                 <code>                
                 <p>
-                    <span class="greenColor">// Array.from(arrayLike)</span>
+                    <span class="greenColor">// Array.from(arrayLike, mapFn)</span>
                 </p>
                 <p>
                     <span class="greenColor">// разбивает массивоподобные аргументы на массив</span>
@@ -46,6 +46,12 @@
                 <p>
                     <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span> <span class="whiteColor">**</span> <span class="lightGreenColor">80</span><span class="whiteColor">))));</span> <span class="greenColor">//["1", "2", "0", "8", "9", "2", "5", "8", "1", "9", "6", "1", "4", "6", "2", "9", "1", "7", "4", "7", "0", "6", "1", "7", "6"]</span>
                 </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">({</span><span class="skyBlueColor">length : </span><span class="lightGreenColor">5</span><span class="whiteColor">}, (</span><span class="skyBlueColor">item</span><span class="whiteColor">, </span><span class="skyBlueColor">index</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="whiteColor">[</span><span class="skyBlueColor">item</span><span class="whiteColor">, </span><span class="skyBlueColor">index</span><span class="whiteColor">]));</span><span class="greenColor"> // [[undefined, 0], [undefined, 1], [undefined, 2], [undefined, 3], [undefined, 4]]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">from</span><span class="whiteColor">({</span><span class="skyBlueColor">length : </span><span class="lightGreenColor">5</span><span class="whiteColor">}, (</span><span class="skyBlueColor">_</span><span class="whiteColor">, </span><span class="skyBlueColor">i</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">i</span><span class="whiteColor">));</span><span class="greenColor"> // [0, 1, 2, 3, 4]</span>
+                </p>
             </code>
         </section>
         <section class="Array_isArray">
@@ -68,7 +74,7 @@
                     <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">({}));</span> <span class="greenColor">// false</span>
                 </p>
                 <p>
-                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">));</span> <span class="greenColor">// true</span>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="yellowColor">isArray</span><span class="whiteColor">( </span><span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor"> ));</span> <span class="greenColor">// true</span>
                 </p>
             </code>
         </section>
