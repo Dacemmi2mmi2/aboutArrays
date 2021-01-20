@@ -752,7 +752,7 @@
             </h2>
             <code>
                 <p>
-                    <span class="greenColor">// Array.prototype.reduceRight(callback(item, index, array), accumulator)</span>
+                    <span class="greenColor">// Array.prototype.reduceRight( callback(item, index, array), accumulator)</span>
                 </p>
                 <p>
                     <span class="greenColor">// применяет функцию к аккумулятору и каждому значению массива (справа-налево), сводя его к одному значению. Метод reduceRight() выполняет функцию callback один раз для каждого элемента, присутствующего в массиве, за исключением пустот, принимая четыре аргумента: начальное значение (или значение от предыдущего вызова callback), значение текущего элемента, текущий индекс и массив, по которому происходит итерация.</span>
@@ -780,6 +780,141 @@
                 </p>
                 <p>
                     <span class="greenColor">// в данном примере 0 - это начальное значение параметра accumulator, если его не зададавать, то по умолчанию он будет рааным значению последнего элемента в массиве (arrD[-1])</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_reverse">
+            <h2>
+                <code>
+                    25) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">reverse</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.reverse()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// на месте обращает порядок следования элементов массива. Первый элемент массива становится последним, а последний — первым</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'a'</span><span class="whiteColor">, </span><span class="brownColor">'b'</span><span class="whiteColor">, </span><span class="brownColor">'c'</span><span class="whiteColor">]).</span><span class="yellowColor">reverse</span><span class="whiteColor">());</span><span class="greenColor"> // ['c', 'b', 'a']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">]).</span><span class="yellowColor">reverse</span><span class="whiteColor">());</span><span class="greenColor"> // [4, 3, 2, 1]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_shift">
+            <h2>
+                <code>
+                    26) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">shift</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.shift()</span>
+                </p>
+                <p>
+                    <span class="greenColor">// удаляет первый элемент из массива и возвращает его значение. Этот метод изменяет длину массива</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">newArray </span><span class="whiteColor">= [</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">newArray</span><span class="whiteColor">.</span><span class="yellowColor">shift</span><span class="whiteColor">());</span><span class="greenColor"> // 1</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">newArray</span><span class="whiteColor">);</span><span class="greenColor"> // [2, 3, 4]</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_slice">
+            <h2>
+                <code>
+                    27) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">slice</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.slice(begin, end)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// возвращает новый массив, содержащий копию части исходного массива. Метод slice() не изменяет исходный массив, а возвращает новую «одноуровневую» копию, содержащую копии элементов, вырезанных из исходного массива.</span>
+                </p>
+                <p>
+                    <span class="blueFnArgColor">let </span><span class="skyBlueColor">srtArrr </span><span class="whiteColor">= [</span><span class="brownColor">'first'</span><span class="whiteColor">, </span><span class="brownColor">'second'</span><span class="whiteColor">, </span><span class="brownColor">'third'</span><span class="whiteColor">, </span><span class="brownColor">'fourth'</span><span class="whiteColor">, </span><span class="brownColor">'fifth'</span><span class="whiteColor">];</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">strArr</span><span class="whiteColor">.</span><span class="yellowColor">slice</span><span class="whiteColor">());</span><span class="greenColor"> // ['first', 'second', 'third', 'fourth', 'fifth']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">strArr</span><span class="whiteColor">.</span><span class="yellowColor">slice</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // ['third', 'fourth', 'fifth']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">strArr</span><span class="whiteColor">.</span><span class="yellowColor">slice</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">));</span><span class="greenColor"> // ['third', 'fourth']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">strArr</span><span class="whiteColor">);</span><span class="greenColor"> // ['first', 'second', 'third', 'fourth', 'fifth']</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_some">
+            <h2>
+                <code>
+                    28) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">some</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.some( callback(item, index, array), thisArg)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// проверяет, удовлетворяет ли какой-либо элемент массива условию, заданному в передаваемой функции.</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">12</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">7</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">].</span><span class="yellowColor">some</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt;= </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span> <span class="greenColor">// true</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">7</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">].</span><span class="yellowColor">some</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt;= </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span> <span class="greenColor">// false</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">244</span><span class="whiteColor">, </span><span class="brownColor">'abc'</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="brownColor">'string'</span><span class="whiteColor">].</span><span class="yellowColor">some</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; typeof </span><span class="skyBlueColor">item</span><span class="whiteColor"> === </span><span class="brownColor">'string'</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="brownColor">'abc'</span><span class="whiteColor">].</span><span class="yellowColor">some</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; typeof </span><span class="skyBlueColor">item</span><span class="whiteColor"> === </span><span class="brownColor">'number'</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                </p>
+            </code>
+        </section>
+        <section class="Array_sort">
+            <h2>
+                <code>
+                    29) <span class="blueGreenColor">Array</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">sort</span><span class="whiteColor">()</span>
+                </code>
+            </h2>
+            <code>
+                <p>
+                    <span class="greenColor">// Array.prototype.sort(fn)</span>
+                </p>
+                <p>
+                    <span class="greenColor">// на месте сортирует элементы массива и возвращает отсортированный массив</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'арбузы'</span><span class="whiteColor">, </span><span class="brownColor">'бананы'</span><span class="whiteColor">, </span><span class="brownColor">'Вишня'</span><span class="whiteColor">].</span><span class="yellowColor">sort</span><span class="whiteColor">());</span><span class="greenColor">// ['Вишня', 'арбузы', 'бананы']</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">21</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">].</span><span class="yellowColor">sort</span><span class="whiteColor">());</span><span class="greenColor"> // [1, 10, 2, 21]</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="brownColor">'слово'</span><span class="whiteColor">, </span><span class="brownColor">'Слово'</span><span class="whiteColor">, </span><span class="brownColor">'1 Слово'</span><span class="whiteColor">, </span><span class="brownColor">'2 Слова'</span><span class="whiteColor">].</span><span class="yellowColor">sort</span><span class="whiteColor">());</span><span class="greenColor">// ['1 Слово', '2 Слова', 'Слово', 'слово']</span>
+                </p>
+                <p>
+                    <span class="greenColor">// В Unicode, числа находятся перед буквами в верхнем регистре, а те, в свою очередь, перед буквами в нижнем регистре</span>
+                </p>
+                <p>
+                    <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">21</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">].</span><span class="yellowColor">sort</span><span class="whiteColor">((</span><span class="skyBlueColor">a</span><span class="whiteColor">, </span><span class="skyBlueColor">b</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">a</span><span class="whiteColor"> - </span><span class="skyBlueColor">b</span><span class="whiteColor">));</span><span class="greenColor"> // [1, 2, 10, 21]</span>
+                </p>
+                <p>
+                    <span class="greenColor">// сортировка чисел по возростанию</span>
                 </p>
             </code>
         </section>
