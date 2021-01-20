@@ -276,3 +276,53 @@ console.log(arrD.reduceRight((acum, item) => item > acum ? item : acum, 0)); // 
 console.log(arrD.reduceRight(acum => acum)); // 5
 console.log(arrD.reduceRight(acum => acum, 0)); // 0
 console.log('\n');
+
+
+
+// Array.prototype.reverse()
+// на месте обращает порядок следования элементов массива. Первый элемент массива становится последним, а последний — первым.
+console.log('25) ==== Array.prototype.reverse() =========');
+console.log(['a', 'b', 'c'].reverse()); // ['c', 'b', 'a']
+console.log([1, 2, 3, 4].reverse()); // [4, 3, 2, 1]
+console.log('\n');
+
+
+// Array.prototype.shift()
+// удаляет первый элемент из массива и возвращает его значение. Этот метод изменяет длину массива.
+console.log('26) ==== Array.prototype.shift() =========');
+let newArray = [1, 2, 3, 4];
+console.log(newArray.shift()); // 1
+console.log(newArray); // [2, 3, 4]
+console.log('\n');
+
+
+// Array.prototype.slice(begin, end)
+// возвращает новый массив, содержащий копию части исходного массива.
+console.log('27) ===== Array.prptotype.slice() ==========');
+let strArr = ['first', 'second', 'third', 'fourth', 'fifth'];
+console.log(strArr.slice()); // ['first', 'second', 'third', 'fourth', 'fifth']
+console.log(strArr.slice(2)); // [third', 'fourth', 'fifth']
+console.log(strArr.slice(2, 4)); // [third', 'fourth']
+console.log(strArr); // ['first', 'second', 'third', 'fourth', 'fifth']
+console.log('\n');
+
+
+// Array.prototype.some( callback(item, index, array), thisArg)
+// проверяет, удовлетворяет ли какой-либо элемент массива условию, заданному в передаваемой функции.
+console.log("==== 28) Array.prototype.some() =======");
+console.log([12, 3, 7, 10].some(item => item >= 10)); // true
+console.log([2, 3, 7, 1].some(item => item >= 10)); // false
+console.log([244, 'abc', 1, 'string'].some(item => typeof item === 'string')); // true
+console.log([1, 2, 3, 4, 'abc'].some(item => typeof item === 'number')); // true
+console.log("\n");
+
+
+// Array.prototype.sort(fn)
+// на месте сортирует элементы массива и возвращает отсортированный массив.
+console.log('29) ==== Array.prototype.sprt() =========');
+console.log(['арбузы', 'бананы', 'Вишня'].sort()); // ['Вишня', 'арбузы', 'бананы']
+console.log([21, 2, 10, 1].sort()); // [1, 10, 2, 21]
+console.log(['слово', 'Слово', '1 Слово', '2 Слова'].sort()); // ['1 Слово', '2 Слова', 'Слово', 'слово']
+// В Unicode, числа находятся перед буквами в верхнем регистре, а те, в свою очередь, перед буквами в нижнем регистре.
+console.log([21, 2, 10, 1].sort((a, b) => a - b)); // [1, 2, 10, 21]
+// сортировка чисел по возростанию
