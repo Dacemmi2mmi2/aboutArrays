@@ -37,6 +37,7 @@ body
 @media screen and (max-width: 450px)
 {
     .mainContainer h2{font-size: 26px;}
+    .mainContainer h2 .hide{display: none;}
 }
 
 
