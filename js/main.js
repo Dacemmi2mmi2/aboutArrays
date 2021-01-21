@@ -68,6 +68,7 @@ for (let i = 0; i < arr.length; i++){
     console.log(eArr.next().value);
 }
 // console.log(eArr.next().value)
+// если вызвать next() > arr.length раз, то в дальнейшем вместо значений ключ/значение получим undefined
 console.log("\n");
 
 
@@ -326,3 +327,65 @@ console.log(['слово', 'Слово', '1 Слово', '2 Слова'].sort())
 // В Unicode, числа находятся перед буквами в верхнем регистре, а те, в свою очередь, перед буквами в нижнем регистре.
 console.log([21, 2, 10, 1].sort((a, b) => a - b)); // [1, 2, 10, 21]
 // сортировка чисел по возростанию
+console.log('\n');
+
+
+// Array.prototype.splice(start, deleteCount, item)
+// изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.
+console.log('30) ==== Array.prototype.splice() =========');
+let numbers = [9, 12, 43, 23, 65];
+console.log(numbers.splice()); // []
+console.log(numbers.slice(1, 0, 12)); // []
+console.log(numbers.splice(1, 2)); // [12, 43]
+console.log(numbers); // [9, 23, 65]
+console.log('\n');
+
+
+// Array.prototype.toLocaleString()
+// возвращает строковое представление элементов массива. Элементы преобразуются в строки с использованием своих собственных методов toLocaleString и эти строки разделяются локале-зависимой строкой (например, запятой «,»).
+console.log('31) ==== Array.prototype.toLocaleString() =========');
+console.log([21245, new Date, 'string'].toLocaleString()); // '21 245,21.01.2021, 09:00:00,string'
+console.log([undefined, null, new Object, new Function, new Number, true].toLocaleString()); // ',,[object Object], function anonymous() { },0,true'
+console.log('\n');
+
+
+// Array.toSource()
+// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться. Метод toSource() возвращает строковое представление исходного кода массива
+console.log('32) ==== Array.prototype.toSource ==========');
+// console.log(Array.of(1,2,4).toSource()); // TypeError: toSource is not a function
+console.log('\n');
+
+
+// Array.prototype.toString()
+// возвращает строковое представление указанного массива и его элементов.
+console.log('33) ==== Array.prototype.toString() =========');
+console.log(['Jan', 'Feb', 'Mar', 'Apr'].toString()); // 'Jan,Feb,Mar,Apr'
+console.log([undefined, null, new Object, new Function, new Number, true].toString()); // ',,[object Object], function anonymous() { },0,true'
+console.log([2, 3, 4, 5, 6].toString()); // '2,3,4,5,6'
+console.log('\n');
+
+
+// Array,protoype.unshift(element)
+// добавляет один или более элементов в начало массива и возвращает новую длину массива.
+console.log('34) ==== Array.prototype.unshift() ========');
+let myArr = [1, 2, 3, 5, 6];
+console.log(myArr.unshift(0, -4)); // 7
+console.log(myArr); // [0, -4, 1, 2, 3, 5, 6]
+console.log('\n');
+
+
+// Array.prototype.values()
+// возвращает новый объект итератора массива Array Iterator, содержащий значения для каждого индекса в массиве.
+console.log('35) ===== Array.prototype.values() =======');
+let data = ['string', undefined, null, 543];
+let vData = data.values();
+// for (let value of vData) {
+//     console.log(value);
+// }
+// без цикла
+console.log(vData.next().value); // string
+console.log(vData.next().value); // undefined
+console.log(vData.next().value); // null
+console.log(vData.next().value); // 543
+console.log(vData.next().value); // undefined
+// если вызвать next() > arr.length раз, то в дальнейшем вместо значений массива получим undefined
