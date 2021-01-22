@@ -1,17 +1,26 @@
-@import 'reset.css';
+
+::-webkit-scrollbar
+{
+    width: 2px; /* ширина для вертикального скролла */
+    height: 2px; /* высота для горизонтального скролла */
+    background-color: #143861;
+}
+
+
+html{scroll-behavior: smooth;}
+
 
 body
 {
     width: 100%;
     height: 100%;
-    background-color: #000;
 }
 
 
 .mainContainer
 {
-    width: 70%;
-    margin: 30px auto;
+    width: 100%;
+    display: flex;
 }
 @media screen and (max-width: 600px)
 {
@@ -23,7 +32,56 @@ body
     }
 }
 
-.mainContainer section{margin: 0 0 50px 0;}
+
+.mainContainer .blockNavigation
+{
+    width: 20%;
+    position: fixed;
+    height: 100%;
+    background-color: #252526;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+
+.blockNavigation p
+{
+   margin: 0 20px 0 20px;
+   font-size: 19px;
+   padding: 5px 0 5px 0;
+   border: solid 1px #252526;
+   transition: border .3s linear; 
+}
+
+
+.blockNavigation p:hover{border: solid 1px white;}
+
+
+.blockNavigation p:last-child{margin-bottom: 30px;}
+
+
+.blockNavigation p a
+{
+    text-decoration: none;
+    padding: 0 0 0 20px;
+}
+
+
+.contentAboutArrays
+{
+    width: 80%;
+    margin: 0 0 0 20%;
+    padding: 20px 0 0 0;
+    background-color: #1e1e1e;
+}
+
+
+.contentAboutArrays section
+{
+    margin: 0 0 50px 0;
+    padding: 0 20px 0 20px;
+}
 
 
 .mainContainer h2
@@ -41,7 +99,7 @@ body
 }
 
 
-.mainContainer p
+.contentAboutArrays p
 {
     font-size: 19px;
     line-height: 1.1;
@@ -56,6 +114,7 @@ body
         margin: 0 5px 0 5px;
     }
 }
+
 
 .mainContainer p.mLeft{margin-left: 30px;}
 
