@@ -389,3 +389,39 @@ console.log(vData.next().value); // null
 console.log(vData.next().value); // 543
 console.log(vData.next().value); // undefined
 // если вызвать next() > arr.length раз, то в дальнейшем вместо значений массива получим undefined
+console.log('\n\n')
+
+
+
+
+
+
+
+
+// функции строк
+
+
+// String.fromCharCode()
+// возвращает строку, созданную из указанной последовательности значений единиц кода UTF-16.
+console.log('1) ===== String.fromCharCode() =======');
+console.log(String.fromCharCode(42, 64, 65, 66, 67)); // @ABC
+console.log(String.fromCharCode(194564)); // 
+console.log(String.fromCharCode(0x2F804)); // 
+console.log('\n');
+
+
+// String.fromCodePoint()
+// возвращает строку, созданную из указанной последовательности кодовых точек. Метод String.fromCharCode() не может вернуть символ по такой большой кодовой точке. Следующий же метод может вернуть 4-байтный символ так же, как и обычный 2-байтный (то есть, он может вернуть один символ, который на самом деле имеет длину 2, а не 1!)
+console.log('2) ===== String.fromCodePoint() =======');
+console.log(String.fromCodePoint(42, 65)) // *A
+console.log(String.fromCodePoint(194564)); // 你
+console.log(String.fromCodePoint(0x2F804)); // 你
+console.log('\n');
+
+
+// String.prototype.anchor()
+// создаёт якорный HTML-элемент <a>, используемый в качестве цели гиперссылки.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('3) ===== String.protoype.anchor() ======');
+console.log('str'.anchor('title')); // <a name="title">str</a>
+console.log('\n');
