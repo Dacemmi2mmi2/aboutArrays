@@ -120,7 +120,8 @@ body
 }
 
 
-.contentAboutArrays p
+.contentAboutArrays p,
+.contentAboutString p
 {
     font-size: 19px;
     line-height: 1.1;
@@ -149,3 +150,4 @@ body
 .blueFnArgColor{color: #569cd6}
 .pinkColor{color: #c586c0;}
 .bluePrototype{color: #44c1db;}
+.redColor{color: tomato}
