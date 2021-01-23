@@ -44,6 +44,24 @@ body
 }
 
 
+.blockNavigation .itemNavigation{width: 100%;}
+
+
+.blockNavigation .itemNavigation p
+{
+    color: white;
+    padding: 5px 0 5px 20px;
+    cursor: pointer;
+}
+
+.blockNavigation .itemNavigation p:first-child
+{
+    margin: 10px 0 0 0;
+    cursor: auto;
+    border: none;
+}
+
+
 
 .blockNavigation p
 {
@@ -51,6 +69,7 @@ body
    font-size: 19px;
    padding: 5px 0 5px 0;
    border: solid 1px #252526;
+   border-radius: 5px;
    transition: border .3s linear; 
 }
 
@@ -116,7 +135,7 @@ body
 }
 
 
-.mainContainer p.mLeft{margin-left: 30px;}
+.contentAboutArrays p.mLeft{margin-left: 30px;}
 
 .greenColor{color: #6a8a35;}
 .skyBlueColor{color: #8cdcfe;}
