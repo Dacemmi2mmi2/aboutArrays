@@ -1,7 +1,7 @@
 
 ::-webkit-scrollbar
 {
-    width: 2px; /* ширина для вертикального скролла */
+    /*width: 4px; /* ширина для вертикального скролла */
     height: 2px; /* высота для горизонтального скролла */
     background-color: #143861;
 }
@@ -86,9 +86,10 @@ body
     padding: 0 0 0 20px;
 }
 
-
+.contentAboutString,
 .contentAboutArrays
 {
+    position: absolute;
     width: 80%;
     margin: 0 0 0 20%;
     padding: 20px 0 0 0;
@@ -96,6 +97,7 @@ body
 }
 
 
+.contentAboutString section,
 .contentAboutArrays section
 {
     margin: 0 0 50px 0;
