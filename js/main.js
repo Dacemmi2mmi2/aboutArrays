@@ -425,3 +425,119 @@ console.log('\n');
 console.log('3) ===== String.protoype.anchor() ======');
 console.log('str'.anchor('title')); // <a name="title">str</a>
 console.log('\n');
+
+
+// String.prototype.big()
+// создаёт HTML-элемент <big>, заставляющий строку отображаться большим шрифтом
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('4) ===== String.prototype.big() =========');
+console.log('string'.big()); // <big>string</big>
+console.log('\n');
+
+
+// String.prototype.blink()
+// создаёт HTML-элемент <blink>, заставляющий строку мерцать.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+// мерцающий текст осуждается некоторыми стандартами доступности. Сам элемент <blink> является нестандартным и устаревшим!
+console.log('5) ===== String.prototype.blink() ========');
+console.log('string'.blink()); // <blink>string</blink>
+console.log('\n');
+
+
+// String.prototype.bold()
+// создаёт HTML-элемент <b>, заставляющий строку отображаться полужирным шрифтом.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('6) ===== String.prototype.bpld() ========');
+console.log('string'.bold()) // <b>string</b>
+console.log('\n');
+
+
+// String.prototype.chatAt( index )
+// возвращает указанный символ из строки.
+console.log('7) ===== String.prototype.chatAt() =========');
+console.log('string'.charAt()); // s
+console.log('string'.charAt(3)); // i
+console.log('string'.charAt(23)); // 
+console.log('\n');
+
+
+// String.prototype.charCodeAt( index )
+// возвращает числовое значение Юникода для символа по указанному индексу (за исключением кодовых точек Юникода, больших 0x10000).
+console.log('8) ===== String.prototype.chatCodeAt() =========');
+console.log('ABC'.charCodeAt()); // 65
+console.log('ABC'.charCodeAt(1)); // 66
+console.log('ABC'.charCodeAt(10)); // NaN
+console.log('\uD800\uDC00'.charCodeAt(0)); // 55296
+console.log('\n');
+
+
+// String.prototype.codePointAt( position )
+// возвращает неотрицательное целое число, являющееся закодированным в UTF-16 значением кодовой точки
+console.log('9) ====== String.prototype.codePointAt() =========');
+console.log('ABC'.codePointAt()); // 65
+console.log('ABC'.codePointAt(1)); // 66
+console.log('ABC'.codePointAt(23)); // undefined
+console.log('\uD800\uDC00'.codePointAt(0)); 65536
+console.log('\n');
+
+
+// String.prototype.concat()
+// объединяет текст из двух или более строк и возвращает новую строку.
+console.log('10) ===== String.prototype.concat() =========');
+console.log('Hello'.concat(' World')); // Hello World
+console.log('\n');
+
+
+// String.prototype.endsWith( searchStr, length )
+// позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соотвественно, true или false.
+console.log('11) ===== String.prototype.endsWith =========');
+console.log('test string'.endsWith('string')); // true
+console.log('test string'.endsWith('str')); // false
+console.log('test string'.endsWith('str', 8)); // true
+console.log('\n');
+
+
+// String.prototype.fixed()
+// создаёт HTML-элемент <tt>, заставляющий строку отображаться моноширинным шрифтом.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('12) ===== String.prototype.fixed() =======');
+console.log('str'.fixed()); // <tt>str</tt>
+console.log('\n');
+
+
+// String.prototype.fontcolor( color )
+// создаёт HTML-элемент <font>, заставляющий строку отображаться шрифтом указанного цвета.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+// элемент <font> был удалён из HTML5 и больше не должен использоваться. Вместо него веб-разработчикам следует использовать свойства CSS.
+console.log('13) ===== String.prototype.fontcolor() =======');
+console.log('ab'.fontcolor('green')); // <font color="green">ab</font>
+console.log('\n');
+
+
+// String.prototype.fontsize( size )
+// создаёт HTML-элемент <font>, заставляющий строку отображаться шрифтом указанного размера.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+// элемент <font> был удалён из HTML5 и больше не должен использоваться. Вместо него веб-разработчикам следует использовать свойства CSS.
+console.log('14) ===== String.prototype.fontsize() =======');
+console.log('ab'.fontsize(7)); // <font size="7">ab</font>
+console.log('\n');
+
+
+// String.prototype.includes( searchStr, position)
+// проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false.
+console.log('15) ===== String.prototype.includes() =======');
+console.log('str ab'.includes('ab')); // true
+console.log('str ab'.includes('AB')); // false
+console.log('str ab'.includes('str', 0)); // true
+console.log('str ab'.includes('str', 1)); // false
+console.log('\n');
+
+
+// String.prototype.indexOf( searchValue, fromIndex)
+// возвращает индекс первого вхождения указанного значения в строковый объект String, на котором он был вызван, начиная с индекса fromIndex. Возвращает -1, если значение не найдено.
+console.log('15) ===== String.prototype.indexOf() =======');
+console.log('str ab'.indexOf('ab')); // 4
+console.log('str ab'.indexOf('AB')); // -1
+console.log('str ab'.indexOf('str', 0)); // 0
+console.log('str ab'.indexOf('str', 1)); // -1
+console.log('\n');
