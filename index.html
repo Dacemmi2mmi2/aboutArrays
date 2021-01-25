@@ -1906,13 +1906,26 @@
                     </p>
                 </code>
             </section>
-            <section id="String_itelics" class="String_itelics">
+            <section id="String_italics" class="String_italics">
                 <h2>
                     <code>
-                        17) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">itelics</span><span class="whiteColor">()</span>
+                        17) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">italics</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.italics()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// создаёт HTML-элемент &lt;i&gt;, заставляющий строку отображаться курсивом.</span>
+                    </p>
+                    <p>
+                        <span class="redColor">// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'new str'</span><span class="whiteColor">.</span><span class="yellowColor">italics</span><span class="whiteColor">()));</span><span class="greenColor"> // &lt;i&gt;new str&lt;/i&gt;</span>
+                    </p>
+                </code>
             </section>
             <section id="String_lastIndexOf" class="String_lastIndexOf">
                 <h2>
@@ -1920,7 +1933,26 @@
                         18) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.lastIndexOf( searchValue, fromIndex)</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// возвращает индекс последнего вхождения указанного значения в строковый объект String, на котором он был вызван, или -1, если ничего не было найдено. Поиск по строке ведётся от конца к началу, начиная с индекса fromIndex.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str ab ab'</span><span class="whiteColor">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">(</span><span class="brownColor">'ab'</span><span class="whiteColor">));</span><span class="greenColor"> // 7</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str ab ab'</span><span class="whiteColor">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">(</span><span class="brownColor">'AB'</span><span class="whiteColor">));</span><span class="greenColor"> // -1</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str ab ab'</span><span class="whiteColor">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">, </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str ab ab'</span><span class="whiteColor">.</span><span class="yellowColor">lastIndexOf</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                    </p>
+                </code>
             </section>
             <section id="String_link" class="String_link">
                 <h2>
@@ -1928,7 +1960,20 @@
                         19) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">link</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.link()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// создаёт HTML-элемент &lt;a&gt;, заставляющий строку отображаться в виде ссылки на другой URL.</span>
+                    </p>
+                    <p>
+                        <span class="redColor">// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'new str'</span><span class="whiteColor">.</span><span class="yellowColor">link</span><span class="whiteColor">(</span><span class="brownColor">'link'</span><span class="whiteColor">));</span><span class="greenColor"> // &lt;a href="link"&gt;new str&lt;/i&gt;</span>
+                    </p>
+                </code>
             </section>
             <section id="String_localeCompare" class="String_localeCompare">
                 <h2>
@@ -1936,7 +1981,23 @@
                         20) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">localeCompare</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.localeCompare( compareString, locales, options)</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// Возвращает число, указывающее, должна данная строка находится до, после или в том же самом месте, что и строка, переданная через параметр, при сортировке этих строк. Если данная строка предшествует строке compareString, возвращает отрицательное число, если она следует за строкой compareString, возвращает положительное значение и возвращает 0, если строки находятся на одном уровне.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'a'</span><span class="whiteColor">.</span><span class="yellowColor">localeCompare</span><span class="whiteColor">(</span><span class="brownColor">'b'</span><span class="whiteColor">, </span><span class="brownColor">'cd'</span><span class="whiteColor">));</span><span class="greenColor"> // -1</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'e'</span><span class="whiteColor">.</span><span class="yellowColor">localeCompare</span><span class="whiteColor">(</span><span class="brownColor">'b'</span><span class="whiteColor">, </span><span class="brownColor">'cd'</span><span class="whiteColor">));</span><span class="greenColor"> // 1</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'a'</span><span class="whiteColor">.</span><span class="yellowColor">localeCompare</span><span class="whiteColor">(</span><span class="brownColor">'a'</span><span class="whiteColor">, </span><span class="brownColor">'cd'</span><span class="whiteColor">));</span><span class="greenColor"> // 0</span>
+                    </p>
+                </code>
             </section>
             <section id="String_match" class="String_match">
                 <h2>
@@ -1944,20 +2005,124 @@
                         21) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">match</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.match( regexp)</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// возвращает массив получившичся совпадений при сопоставлении строки с регулярным выражением.</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">alpf </span><span class="whiteColor">= </span><span class="brownColor">'ABCDEabcde'</span><span class="whiteColor">;</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">reg </span><span class="whiteColor">= </span><span class="redColor">/[a-c]/</span><span class="blueFnArgColor">gi</span><span class="whiteColor">;</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">alpf</span><span class="whiteColor">.</span><span class="yellowColor">match</span><span class="whiteColor">(</span><span class="skyBlueColor">reg</span><span class="whiteColor">));</span><span class="greenColor"> // ['A', 'B', 'C', 'a', 'b', 'c']</span>
+                    </p>
+                </code>
+            </section>
+            <section id="String_matchAll" class="String_matchAll">
+                <h2>
+                    <code>
+                        22) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">matchAll</span><span class="whiteColor">()</span>
+                    </code>
+                </h2>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.matchAll()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor"></span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">alpf </span><span class="whiteColor">= </span><span class="brownColor">'ABCDEabcde'</span><span class="whiteColor">;</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">reg </span><span class="whiteColor">= </span><span class="redColor">/[a-c]/</span><span class="blueFnArgColor">gi</span><span class="whiteColor">;</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">arrMatch </span><span class="whiteColor">= </span><span class="whiteColor">[...</span><span class="skyBlueColor">alpf</span><span class="whiteColor">.</span><span class="yellowColor">matchAll</span><span class="whiteColor">(</span><span class="skyBlueColor">reg</span><span class="whiteColor">)];</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrMatch</span><span class="whiteColor">);</span><span class="greenColor"> // [["A", index: 0, input: "ABCDEabcde", groups: undefined], ["B", index: 1, input: "ABCDEabcde", groups: undefined], ["C", index: 2, input: "ABCDEabcde", groups: undefined], ["a", index: 5, input: "ABCDEabcde", groups: undefined], ["b", index: 6, input: "ABCDEabcde", groups: undefined], ["c", index: 7, input: "ABCDEabcde", groups: undefined]]</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">arrMatch</span><span class="whiteColor">[</span><span class="lightGreenColor">0</span><span class="whiteColor">].</span><span class="skyBlueColor">input</span><span class="whiteColor">);</span><span class="greenColor"> // "ABCDEabcde"</span>
+                    </p>
+                </code>
             </section>
             <section id="String_normalize" class="String_normalize">
                 <h2>
                     <code>
-                        22) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">normalize</span><span class="whiteColor">()</span>
+                        23) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">normalize</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.normalize( form)</span>
+                    </p>
+                    <p>
+                        <span class="greenColor"> // возвращает форму нормализации Юникода данной строки (если значение не является строкой, сначала оно будет в неё преобразовано). Он не изменяет значение самой строки.</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">valueStr </span><span class="whiteColor">= [</span><span class="brownColor">'h'</span><span class="whiteColor">, </span><span class="brownColor">'ĥ'</span><span class="whiteColor">, </span><span class="brownColor">'æ'</span><span class="whiteColor">, </span><span class="brownColor">'ae'</span><span class="whiteColor">, </span><span class="brownColor">'g'</span><span class="whiteColor">, </span><span class="brownColor">'ġ'</span><span class="whiteColor">];</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">let </span><span class="skyBlueColor">valueForm </span><span class="whiteColor">= [</span><span class="brownColor">'NFC'</span><span class="whiteColor">, </span><span class="brownColor">'NFD'</span><span class="whiteColor">, </span><span class="brownColor">'NFKC'</span><span class="whiteColor">, </span><span class="brownColor">'NFKD'</span><span class="whiteColor">];</span>
+                    </p>
+                    <p>
+                        <span class="pinkColor">for </span><span class="whiteColor">(</span><span class="blueFnArgColor">let </span><span class="skyBlueColor">i </span><span class="whiteColor">= </span><span class="lightGreenColor">0</span><span class="whiteColor">; </span><span class="skyBlueColor">i </span><span class="whiteColor">&lt; </span><span class="skyBlueColor">valueForm</span><span class="whiteColor">.</span><span class="skyBlueColor">length</span><span class="whiteColor">; </span><span class="skyBlueColor">i </span><span class="whiteColor">++){</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="yellowColor">sort</span><span class="whiteColor">(</span><span class="skyBlueColor">valueStr</span><span class="whiteColor">.</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="yellowColor">normalize</span><span class="whiteColor">(</span><span class="skyBlueColor">valueForm</span><span class="whiteColor">[</span><span class="skyBlueCoolor">i</span><span class="whiteColor">])));</span>
+                    </p>
+                    <p>
+                        <span class="whiteColor">}</span>
+                    </p>
+                    <p>
+                        <span class="blueFnArgColor">function </span><span class="yellowColor">sort</span><span class="whiteColor">(</span><span class="skyBlueColor">text</span><span class="whiteColor">){</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="skyBlueColor">text</span><span class="whiteColor">.</span><span class="yellowColor">sort</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">, </span><span class="skyBlueColor">b</span><span class="whiteColor">)</span><span class="blueFnArgColor"> =&lt; </span><span class="whiteColor">{</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> &lt; </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">1 </span><span class="whiteColor">};</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> === </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">0 </span><span class="whiteColor">};</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> &gt; </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">1 </span><span class="whiteColor">};</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="whiteColor">});</span>
+                    </p>
+                    <p class="mLeft">
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">text</span><span class="whiteColor">);</span>
+                    </p>
+                    <p>
+                        <span class="whiteColor">}</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// ["ae", "g", "h", "æ", "ġ", "ĥ"]</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// ["ae", "g", "ġ", "h", "ĥ", "æ"]</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// ["ae", "g", "h", "æ", "ġ", "ĥ"]</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// ["ae", "g", "ġ", "h", "ĥ", "æ"]</span>
+                    </p>
+                </code>
             </section>
             <section id="String_padEnd" class="String_padEnd">
                 <h2>
                     <code>
-                        23) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">padEnd</span><span class="whiteColor">()</span>
+                        24) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">padEnd</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -1965,7 +2130,7 @@
             <section id="String_padStart" class="String_padStart">
                 <h2>
                     <code>
-                        24) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">padStart</span><span class="whiteColor">()</span>
+                        25) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">padStart</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -1973,7 +2138,7 @@
             <section id="String_repeat" class="String_repeat">
                 <h2>
                     <code>
-                        25) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">repeat</span><span class="whiteColor">()</span>
+                        26) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">repeat</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -1981,7 +2146,7 @@
             <section id="String_replace" class="String_replace">
                 <h2>
                     <code>
-                        26) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">replace</span><span class="whiteColor">()</span>
+                        27) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">replace</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -1989,7 +2154,7 @@
             <section id="String_search" class="String_search">
                 <h2>
                     <code>
-                        27) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">search</span><span class="whiteColor">()</span>
+                        28) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">search</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -1997,7 +2162,7 @@
             <section id="String_slice" class="String_slice">
                 <h2>
                     <code>
-                        28) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">slice</span><span class="whiteColor">()</span>
+                        29) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">slice</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2005,7 +2170,7 @@
             <section id="String_small" class="String_small">
                 <h2>
                     <code>
-                        29) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">small</span><span class="whiteColor">()</span>
+                        30) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">small</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2013,7 +2178,7 @@
             <section id="String_split" class="String_split">
                 <h2>
                     <code>
-                        30) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">split</span><span class="whiteColor">()</span>
+                        31) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">split</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2021,7 +2186,7 @@
             <section id="String_startsWith" class="String_startsWith">
                 <h2>
                     <code>
-                        31) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">startsWith</span><span class="whiteColor">()</span>
+                        32) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">startsWith</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2029,7 +2194,7 @@
             <section id="String_strike" class="String_strike">
                 <h2>
                     <code>
-                        32) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">strike</span><span class="whiteColor">()</span>
+                        33) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">strike</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2037,21 +2202,23 @@
             <section id="String_sub" class="String_sub">
                 <h2>
                     <code>
-                        33) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">sub</span><span class="whiteColor">()</span>
+                        34) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">sub</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
             </section>
             <section id="String_substr" class="String_substr">
                 <h2>
-                    <code>34) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">substr</span><span class="whiteColor">()</span></code>
+                    <code>
+                        35) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">substr</span><span class="whiteColor">()</span>
+                    </code>
                 </h2>
                 <code></code>
             </section>
             <section id="String_substring" class="String_substring">
                 <h2>
                     <code>
-                        35) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">substring</span><span class="whiteColor">()</span>
+                        36) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">substring</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2059,7 +2226,7 @@
             <section id="String_sup" class="String_sup">
                 <h2>
                     <code>
-                        36) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">sup</span><span class="whiteColor">()</span>
+                        37) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">sup</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2067,7 +2234,7 @@
             <section id="String_toLocaleLowerCase" class="String_toLocaleLowerCase">
                 <h2>
                     <code>
-                        37) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleLowerCase</span><span class="whiteColor">()</span>
+                        38) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleLowerCase</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2075,7 +2242,7 @@
             <section id="String_toLocaleUpperCase" class="String_toLocaleUpperCase">
                 <h2>
                     <code>
-                        38) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleUpperCase</span><span class="whiteColor">()</span>
+                        39) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleUpperCase</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2083,7 +2250,7 @@
             <section id="String_toLowerCase" class="String_toLowerCase">
                 <h2>
                     <code>
-                        39) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLowerCase</span><span class="whiteColor">()</span>
+                        40) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLowerCase</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2091,7 +2258,7 @@
             <section id="String_toSourse" class="String_toSourse">
                 <h2>
                     <code>
-                        40) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSource</span><span class="whiteColor">()</span>
+                        41) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSource</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2099,7 +2266,7 @@
             <section id="String_toString" class="String_toString">
                 <h2>
                     <code>
-                        41) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
+                        42) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2107,7 +2274,7 @@
             <section id="String_toUpperCase" class="String_toUpperCase">
                 <h2>
                     <code>
-                        42) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toUpperCase</span><span class="whiteColor">()</span>
+                        43) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toUpperCase</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2115,7 +2282,7 @@
             <section id="String_trim" class="String_trim">
                 <h2>
                     <code>
-                        43) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trim</span><span class="whiteColor">()</span>
+                        44) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trim</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2123,7 +2290,7 @@
             <section id="String_trimRight" class="String_trimRight">
                 <h2>
                     <code>
-                        44) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimRight</span><span class="whiteColor">()</span>
+                        45) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimRight</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2131,7 +2298,7 @@
             <section id="String_trimLeft" class="String_trimLeft">
                 <h2>
                     <code>
-                        45) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimLeft</span><span class="whiteColor">()</span>
+                        46) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimLeft</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
@@ -2139,7 +2306,7 @@
             <section id="String_valueOf" class="String_valueOf">
                 <h2>
                     <code>
-                        46) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
+                        47) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
                 <code></code>
