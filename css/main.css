@@ -138,7 +138,9 @@ body
 }
 
 
-.contentAboutArrays p.mLeft{margin-left: 30px;}
+.contentAboutArrays p.mLeft,
+.contentAboutString p.mLeft
+{margin-left: 30px;}
 
 .greenColor{color: #6a8a35;}
 .skyBlueColor{color: #8cdcfe;}
