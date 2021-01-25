@@ -535,9 +535,87 @@ console.log('\n');
 
 // String.prototype.indexOf( searchValue, fromIndex)
 // возвращает индекс первого вхождения указанного значения в строковый объект String, на котором он был вызван, начиная с индекса fromIndex. Возвращает -1, если значение не найдено.
-console.log('15) ===== String.prototype.indexOf() =======');
+console.log('16) ===== String.prototype.indexOf() =======');
 console.log('str ab'.indexOf('ab')); // 4
 console.log('str ab'.indexOf('AB')); // -1
 console.log('str ab'.indexOf('str', 0)); // 0
 console.log('str ab'.indexOf('str', 1)); // -1
+console.log('\n');
+
+
+// String.prototype.italics()
+// создаёт HTML-элемент <i>, заставляющий строку отображаться курсивом.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('17) ===== String.prototype.italics() =========');
+console.log('new str'.italics()); // <i>new str</i>
+console.log('\n');
+
+
+// String.prototype.lastIndexOf( searchValue, fromIndex)
+// возвращает индекс последнего вхождения указанного значения в строковый объект String, на котором он был вызван, или -1, если ничего не было найдено. Поиск по строке ведётся от конца к началу, начиная с индекса fromIndex.
+console.log('18) ===== String.prototype.lastIndexOf() ========');
+console.log('str ab ab'.lastIndexOf('ab')); // 7
+console.log('str ab ab'.lastIndexOf('AB')); // -1
+console.log('str ab ab'.lastIndexOf('str', 0)); // 0
+console.log('str ab ab'.lastIndexOf('str', 1)); // 0
+console.log('\n');
+
+
+// String.prototype.link()
+// создаёт HTML-элемент <a>, заставляющий строку отображаться в виде ссылки на другой URL.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('19) ===== String.prototype.link() =======');
+console.log('str'.link('link')); // <a href="link">str</a>
+console.log('\n');
+
+
+// String.prototype.localeCompare( compareString, locales, options)
+// Возвращает число, указывающее, должна данная строка находится до, после или в том же самом месте, что и строка, переданная через параметр, при сортировке этих строк. Если данная строка предшествует строке compareString, возвращает отрицательное число, если она следует за строкой compareString, возвращает положительное значение и возвращает 0, если строки находятся на одном уровне.
+console.log('20) ===== String.prototype.localeCompare() =======');
+console.log('a'.localeCompare('b', 'cd')); // -1
+console.log('e'.localeCompare('b', 'cd')); // 1
+console.log('a'.localeCompare('a', 'cd')); // 0
+console.log('\n');
+
+
+// String.prototype.match( regexp)
+// возвращает массив получившичся совпадений при сопоставлении строки с регулярным выражением.
+console.log('21) ===== String.prototype.match() ======');
+let alpf = 'ABCDEabcde';
+let reg = /[a-c]/gi;
+console.log(alpf.match(reg)); // ['A', 'B', 'C', 'a', 'b', 'c']
+console.log('\n');
+
+
+// String.prototype.matchAll( regexp)
+// возвращает итератор по всем результатам при сопоставлении строки с регулярным выражением.
+console.log('22) ===== String.prototype.matchAll() ======');
+let arrMatch = [...alpf.matchAll(reg)];
+console.log(arrMatch); // [["A", index: 0, input: "ABCDEabcde", groups: undefined], ["B", index: 1, input: "ABCDEabcde", groups: undefined], ["C", index: 2, input: "ABCDEabcde", groups: undefined], ["a", index: 5, input: "ABCDEabcde", groups: undefined], ["b", index: 6, input: "ABCDEabcde", groups: undefined], ["c", index: 7, input: "ABCDEabcde", groups: undefined]]
+console.log(arrMatch[0].input); // ABCDEabcde
+console.log('\n');
+
+
+// String.prototype.normalize( form)
+// возвращает форму нормализации Юникода данной строки (если значение не является строкой, сначала оно будет в неё преобразовано). Он не изменяет значение самой строки.
+console.log('23) ===== String.prototype.normalize() ========.');
+let valueStr = ['h', 'ĥ', 'æ', 'ae', 'g', 'ġ'];
+let valueForm = ['NFC', 'NFD', 'NFKC', 'NFKD'];
+
+for (let i = 0; i < valueForm.length; i++){
+    sort(valueStr.map(item => item.normalize(valueForm[i])));
+}
+
+function sort(text){
+    text.sort((a, b) => {
+        if (a < b){ return -1 };
+        if (a === b){ return 0 };
+        if (a > b){ return 1 };
+    });
+    console.log(text);
+}
+// ["ae", "g", "h", "æ", "ġ", "ĥ"]
+// ["ae", "g", "ġ", "h", "ĥ", "æ"]
+// ["ae", "g", "h", "æ", "ġ", "ĥ"]
+// ["ae", "g", "ġ", "h", "ĥ", "æ"]
 console.log('\n');
