@@ -660,3 +660,132 @@ let re = /([А-ЯЁа-яё]+)\s([А-ЯЁа-яё]+)/;
 let text = 'Джон Смит';
 console.log(text.replace(re, '$2, $1')); // 'Смит Джон'
 console.log('\n');
+
+
+// String.prototype.replaceAll( regExp, string)
+// возвращает новую строку со всеми совпадениями pattern(regExp) , который меняется на replacement(string). pattern может быть строкой или регулярным выражением, и replacement может быть строкой или функция возвращающая каждое совпадение.
+console.log('28) ===== String.prototype.replaceAll ========');
+const p = 'The quick brown fox jumps over the lazy dog. If the dog reacted, was it really lazy?';
+console.log(p.replaceAll('dog', 'monkey')); // 'The quick brown fox jumps over the lazy monkey. If the monkey reacted, was it really lazy?'
+console.log(p.replaceAll(/Dog/gi, 'ferret')); // 'The quick brown fox jumps over the lazy ferret. If the ferret reacted, was it really lazy?'
+// console.log(p.replaceAll(/Dog/i, 'ferret')); // TypeError : String.replaceAll called with a not global RegExp argument
+console.log('\n');
+
+
+// String.protoype.search( regExp)
+// выполняет поиск сопоставления между регулярным выражением и этим объектом String, возвращает индекс первого сопоставления с регулярным выражением внутри строки. В противном случае метод вернёт -1.
+console.log('29) ===== String.prototype.search() =========');
+console.log('str'.search(/s/)); // 0
+console.log('abc'.search(/s/)); // -1
+console.log('\n');
+
+
+// String.prototype.slice( startIndex, endIndex)
+// извлекает часть строки и возвращает новую строку без изменения оригинальной строки.
+console.log('30) ===== String.prototype.slice() ========');
+const str = 'The quick brown fox jumps over the lazy dog.';
+console.log(str.slice(31)); // "the lazy dog."
+console.log(str.slice(4, 19)); // "quick brown fox"
+console.log(str.slice(-4)); // "dog."
+console.log(str.slice(-9, -5)); // "lazy"
+console.log('\n');
+
+
+// String.prototype.small()
+// создаёт HTML-элемент <small>, заставляющий строку отображаться маленьким шрифтом.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('31) ==== String.prototype.small() =======')
+console.log('str'.small()); // <small>str</small>
+console.log('\n');
+
+
+// String.prototype.split( separator, limit)
+// разбивает объект String на массив строк путём разделения строки указанной подстрокой. Метод split() возвращает новый массив.
+console.log('32) ===== String.prototype.split() =======');
+console.log('Привет, мир. Как дела?'.split(' ')); // ['Привет,', 'мир.', 'Как', 'дела?']
+console.log('Привет, мир. Как дела?'.split(' ', 3)); // ['Привет,', 'мир.', 'Как']
+console.log(''.split(' ')); // ['']
+console.log('\n');
+
+
+// String.prototype.startsWith( searchItem, position)
+// помогает определить, начинается ли строка с символов указаных в скобках, возвращая, соответственно, true или false.
+console.log('33) ===== String,prototype.startsWith() ======');
+const t = 'Быть или не быть, вот в чём вопрос.';
+console.log(t.startsWith('Быть')); // true
+console.log(t.startsWith('не быть')); // false
+console.log(t.startsWith('не быть', 9));  // true
+console.log('\n');
+
+
+// String.prototype.strike()
+// создаёт HTML-элемент <strike>, заставляющий строку отображаться зачёркнутым текстом.
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('34) ===== String.prototype.strike() ======');
+console.log('abc'.strike()); // <strike>abc</strike>
+console.log('\n');
+
+
+// String.prototype.sub()
+// создаёт HTML-элемент <sub>, заставляющий строку отображаться подстрочным текстом (нижним индексом).
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('35) ===== String.prototype.sub() ======');
+console.log('abc'.sub()); // <sub>abc</sub>
+console.log('\n');
+
+
+// String.prototype.substr()
+// возвращает указанное количество символов из строки, начиная с указанной позиции.
+// Внимание: так как String.prototype.substr(…) не полностью упразднена (а лишь "удалена из стандартов по вебу"), она считается унаследованной функцией, использование которой лучше избегать там, где это возможно. Она не является частью ядра языка JavaScript и может быть удалена в будущем. Если есть возможность, используйте метод substring().
+console.log('36) ===== String.prototype.substr() =======');
+const m = 'Mozilla';
+console.log(m.substr(1, 2)); // oz
+console.log(m.substr(2)); // zilla
+console.log('\n');
+
+
+// String.prototype.substring( indexA, indexB)
+// возвращает подстроку строки между двумя индексами, или от одного индекса и до конца строки.
+console.log('37) ===== String.prototype.substring() ======');
+const z = 'Mozilla';
+console.log(z.substring(1, 2)); // oz
+console.log(z.substring(2)); // zilla
+console.log('\n');
+
+
+// String.prototype.sup()
+// создаёт HTML-элемент <sup>, заставляющий строку отображаться надстрочным текстом (верхним индексом).
+// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.
+console.log('38) ===== String.prototype.sup() =======');
+console.log('abc'.sup()); // <sup>abc</sup>
+console.log('\n');
+
+
+// String.prototype.toLocaleLowerCase()
+// возвращает значение строки, преобразованное в нижний регистр согласно правилам преобразования регистра локали. Метод toLocaleLowerCase() не изменяет значение самой строки. В большинстве случаев он возвращает тот же результат, что и метод toLowerCase(), но для некоторых локалей, например, турецкой, в которой правила преобразования регистра отличаются от правил по умолчанию, принятых в Юникоде, он может вернуть другой результат.
+console.log('39) ===== String.prototype.toLocaleLowerCase() =====');
+console.log( 'АЛФАВИТ'.toLocaleLowerCase()); // алфавит
+console.log('\n');
+
+
+// String.prototype.toLocaleUpperCase()
+// Метод toLocaleUpperCase() возвращает значение строки, преобразованное в верхний регистр согласно правилам преобразования регистра локали. Метод toLocaleUpperCase() не изменяет значение самой строки. В большинстве случаев он возвращает тот же результат, что и метод toUpperCase(), но для некоторых локалей, например, турецкой, в которой правила преобразования регистра отличаются от правил по умолчанию, принятых в Юникоде, он может вернуть другой результат.
+console.log('40) ===== String.prototype.toLocaleUpperCase() =====');
+console.log( 'алфавит'.toLocaleUpperCase()); // АЛФАВИТ
+console.log('\n');
+
+
+// String.prototype.toLowerCase()
+// возвращает значение строки, на которой он был вызван, преобразованное в нижний регистр. Метод toLowerCase() не изменяет значение самой строки.
+console.log('41) ===== String.prototype.toLowerCase() ======');
+console.log( 'АЛФАВИТ'.toLowerCase()); // 'алфавит'
+console.log('\n');
+
+
+// String.prototype.toSource()
+// Метод toSource() возвращает строковое представление исходного кода объекта.
+// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.
+console.log('42) ===== String.prototype.toSource() =======');
+// console.log('str'.toSource()); // TypeError : toSource is not a function
+
+
