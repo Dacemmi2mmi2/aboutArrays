@@ -2575,7 +2575,17 @@
                         43) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.toString()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// возвращает строку, представляющую указанный объект. Объект String переопределяет метод toString(), унаследованный из объекта Object; он не наследует метод Object.prototype.toString(). Для объектов String метод toString() возвращает строку, представляющую объект и делает тоже самое, что и метод String.prototype.valueOf().</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">.</span><span class="yellowColor">toString</span><span class="whiteColor">());</span><span class="greenColor"> // str</span>
+                    </p>
+                </code>
             </section>
             <section id="String_toUpperCase" class="String_toUpperCase">
                 <h2>
@@ -2583,7 +2593,17 @@
                         44) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toUpperCase</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.toUpperCase()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// возвращает значение строки, преобразованное в верхний регистр. Метод toUpperCase() не изменяет значение самой строки.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'алфавит'</span><span class="whiteColor">.</span><span class="yellowColor">toUpperCase</span><span class="whiteColor">());</span><span class="greenColor"> // АЛФАВИТ</span>
+                    </p>
+                </code>
             </section>
             <section id="String_trim" class="String_trim">
                 <h2>
@@ -2591,7 +2611,20 @@
                         45) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trim</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.trim()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// возвращает строку с вырезанными пробельными символами с её концов. Метод trim() не изменяет значение самой строки.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'abc '</span><span class="whiteColor">.</span><span class="yellowColor">trim</span><span class="whiteColor">());</span><span class="greenColor"> // 'abc'</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">' str '</span><span class="whiteColor">.</span><span class="yellowColor">trim</span><span class="whiteColor">());</span><span class="greenColor"> // 'str'</span>
+                    </p>
+                </code>
             </section>
             <section id="String_trimRight" class="String_trimRight">
                 <h2>
@@ -2599,7 +2632,20 @@
                         46) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimRight</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.trimRight()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// удаляет пробельные символы с правого конца строки.</span>
+                    </p>
+                    <p>
+                        <span class="yellowColor">// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">' str '</span><span class="whiteColor">.</span><span class="yellowColor">trimRight</span><span class="whiteColor">());</span><span class="greenColor"> // ' str'</span>
+                    </p>
+                </code>
             </section>
             <section id="String_trimLeft" class="String_trimLeft">
                 <h2>
@@ -2607,7 +2653,20 @@
                         47) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">trimLeft</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.trimLeft()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// удаляет пробельные символы с левого конца строки.</span>
+                    </p>
+                    <p>
+                        <span class="yellowColor">// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.</span>
+                    </p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">' str '</span><span class="whiteColor">.</span><span class="yellowColor">trimLeft</span><span class="whiteColor">());</span><span class="greenColor"> // 'str '</span>
+                    </p>
+                </code>
             </section>
             <section id="String_valueOf" class="String_valueOf">
                 <h2>
@@ -2615,11 +2674,20 @@
                         48) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
                     </code>
                 </h2>
-                <code></code>
+                <code>
+                    <p>
+                        <span class="greenColor">// String.prototype.valueOf()</span>
+                    </p>
+                    <p>
+                        <span class="greenColor">// Метод valueOf() возвращает примитивное значение объекта String в виде строкового типа данных. Это значение эквивалентно значению вызова метода String.prototype.toString().</span></p>
+                    <p>
+                        <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // str</span>
+                    </p>
+                </code>
             </section>
         </div>
     </main>
-    <!-- <script src="js/app.js"></script> -->
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
