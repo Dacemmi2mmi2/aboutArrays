@@ -787,5 +787,49 @@ console.log('\n');
 // Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.
 console.log('42) ===== String.prototype.toSource() =======');
 // console.log('str'.toSource()); // TypeError : toSource is not a function
+console.log('\n');
 
 
+// String.prototype.toString()
+// возвращает строку, представляющую указанный объект. Объект String переопределяет метод toString(), унаследованный из объекта Object; он не наследует метод Object.prototype.toString(). Для объектов String метод toString() возвращает строку, представляющую объект и делает тоже самое, что и метод String.prototype.valueOf().
+console.log('43) ===== String.prototype.toString() ========');
+console.log('str'.toString()); // str
+console.log('\n');
+
+
+// String.prototype.toUpperCase()
+// возвращает значение строки, преобразованное в верхний регистр. Метод toUpperCase() не изменяет значение самой строки.
+console.log('44) ===== String.prototype.toUpperCase() =======');
+console.log('алфавит'.toUpperCase()); // АЛФАВИТ
+console.log('\n');
+
+
+// String.prototype.trim()
+// возвращает строку с вырезанными пробельными символами с её концов. Метод trim() не изменяет значение самой строки.
+console.log('45) ===== String.prototype.trim() =======');
+console.log('abc '.trim()); // 'abc'
+console.log(' str '.trim()); // 'str'
+console.log('\n');
+
+
+// String.prototype.trimRight()
+// удаляет пробельные символы с правого конца строки.
+// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.
+console.log('46) ==== String.prototype.trimRight() ========')
+console.log(' str '.trimRight()); // ' str'
+console.log('\n');
+
+
+// String.prototype.trimLeft()
+// удаляет пробельные символы с левого конца строки.
+// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.
+console.log('47) ==== String.prototype.trimLeft() ========')
+console.log(' str '.trimLeft()); // 'str '
+console.log('\n');
+
+
+// String.prototype.valueOf()
+// Метод valueOf() возвращает примитивное значение объекта String в виде строкового типа данных. Это значение эквивалентно значению вызова метода String.prototype.toString().
+console.log('48) ===== String.prototype.valueOf() ======');
+console.log('str'.valueOf()); // str
+console.log('\n');
