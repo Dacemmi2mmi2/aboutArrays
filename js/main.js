@@ -832,4 +832,122 @@ console.log('\n');
 // Метод valueOf() возвращает примитивное значение объекта String в виде строкового типа данных. Это значение эквивалентно значению вызова метода String.prototype.toString().
 console.log('48) ===== String.prototype.valueOf() ======');
 console.log('str'.valueOf()); // str
+console.log('\n\n');
+
+
+
+
+
+
+
+
+// Number
+
+
+// Number.EPSILON
+// Свойство Number.EPSILON представляет собой разницу между единицей и наименьшим значением, большим единицы, которое может быть представлено типом Number. Свойство EPSILON имеет значение, приблизительно равное 2.2204460492503130808472633361816E-16 или 2 ** -52.
+console.log('1) ==== Number.EPSILON =======');
+console.log(Number.EPSILON); // 2.220446049250313e-16
+const testNumbers = {
+    x : 0.1,
+    y : 0.3,
+    z : 0.2,
+}
+console.log(testNumbers.x - testNumbers.y + testNumbers.z); // 2.7755575615628914e-17
+console.log((testNumbers.x - testNumbers.y + testNumbers.z) > Number.EPSILON); // false
+console.log('\n');
+
+
+// Number.MAX_SAFE_INTEGER
+// Константа Number.MAX_SAFE_INTEGER представляет максимальное безопасное целочисленное значение в JavaScript (2 ** 53 - 1).
+console.log('2) ====== Number.MAX_SAFE_INTEGER =====');
+console.log( Number.MAX_SAFE_INTEGER); // 9007199254740991
+console.log('\n');
+
+
+// Number.MAX_VALUE
+// Свойство Number.MAX_VALUE представляет максимальное числовое значение, представимое в JavaScript. Свойство MAX_VALUE имеет значение, приблизительно равное 1.79E+308. Значения, большие MAX_VALUE представляются как «бесконечность».
+console.log('3) ===== Number.MAX_VALUE ======');
+console.log( Number.MAX_VALUE); // 1.7976931348623157e+308
+console.log('\n');
+
+
+// Number.MIN_SAFE_INTEGER
+// Константа Number.MIN_SAFE_INTEGER представляет минимальное безопасное целочисленное значение в JavaScript -(2 ** 53 - 1).
+console.log('4) ====== Number.MAX_SAFE_INTEGER =====');
+console.log( Number.MIN_SAFE_INTEGER); // -9007199254740991
+console.log('\n');
+
+
+// Number.MIN_VALUE
+// Свойство Number.MIN_VALUE представляет минимальное положительное числовое значение, представимое в JavaScript. Свойство MIN_VALUE является положительным ближайшим к нулю числом, которое может быть представлено в JavaScript. MIN_VALUE имеет значение, приблизительно равное 5e-324. Значения, меньшие MIN_VALUE, преобразуются в 0 (так называемое «исчезновение порядка» или «антипереполнение»).
+console.log('5) ===== Number.MIN_VALUE ======');
+console.log( Number.MIN_VALUE); // 5e-324
+console.log('\n');
+
+
+// Number.NEGATIVE_INFINITY
+// Свойство Number.NEGATIVE_INFINITY представляет значение отрицательной бесконечности.
+console.log('6) ===== Number.NEGATIVE_INFINITY =====');
+console.log( Number.NEGATIVE_INFINITY); // -Infinity
+console.log( 1 * Number.NEGATIVE_INFINITY); // -Infinity
+console.log( -1 * Number.NEGATIVE_INFINITY); // Infinity
+console.log( 0 * Number.NEGATIVE_INFINITY); // NaN
+console.log( NaN * Number.NEGATIVE_INFINITY); // NaN
+console.log( Number.NEGATIVE_INFINITY / -1); // Infinity
+console.log( Number.NEGATIVE_INFINITY / 1); // -Infinity
+console.log( Number.NEGATIVE_INFINITY / Number.NEGATIVE_INFINITY); // NaN
+console.log(2 / Number.NEGATIVE_INFINITY); // -0
+console.log('\n');
+
+
+// Number.NaN
+// Свойство Number.NaN представляет «не число». Эквивалентно глобальному объекту NaN.
+console.log('7) ===== Number.NaN ======');
+console.log( Number.NaN); // NaN
+console.log('\n');
+
+
+// Number.POSITIVE_INFINITY
+// Свойство Number.POSITIVE_INFINITY представляет значение положительной бесконечности.
+console.log('8) ===== Number.POSITIVE_INFINITY =====');
+console.log( Number.POSITIVE_INFINITY); // Infinity
+console.log( 1 * Number.POSITIVE_INFINITY); // Infinity
+console.log( -1 * Number.POSITIVE_INFINITY); // -Infinity
+console.log( 0 * Number.POSITIVE_INFINITY); // NaN
+console.log( NaN * Number.POSITIVE_INFINITY); // NaN
+console.log( Number.POSITIVE_INFINITY / -1); // -Infinity
+console.log( Number.POSITIVE_INFINITY / 1); // Infinity
+console.log( Number.POSITIVE_INFINITY / Number.POSITIVE_INFINITY); // NaN
+console.log(2 / Number.POSITIVE_INFINITY); // 0
+console.log('\n');
+
+
+// Nubmer.prototype
+// Свойство Number.prototype представляет прототип конструктора Number. Все экземпляры Number наследуются от Number.prototype. Объект прототипа конструктора Number может быть изменён для затрагивания всех экземпляров объекта Number.
+console.log('9) ===== Number.prototype ======')
+console.log(Number.prototype); // Number {0, constructor: ƒ, toExponential: ƒ, toFixed: ƒ, toPrecision: ƒ, …}
+
+
+// Number.isFinite( testValue)
+// Метод Number.isFinite() определяет, является ли переданное значение конечным числом. В отличии от глобальной функции isFinite(), этот метод принудительно не преобразует параметр в число. Это означает, что он возвращает true только для конечных значений числового типа.
+console.log('10) ===== Number.isFinite() ======');
+console.log( Number.isFinite(Infinity)); // false
+console.log( Number.isFinite(NaN));  // false
+console.log( Number.isFinite(-Infinity)); // false
+console.log( Number.isFinite(0)); // true
+console.log( Number.isFinite(2e64)); // true
+console.log( Number.isFinite('0')); // false
+console.log('\n');
+
+
+// Number.isInteger( testValue)
+// Метод Number.isInteger() определяет, является ли переданное значение целым числом. Если целевое значение является целым числом, возвращает true. Если значение NaN или Infinity, то возвращает false. Метод также возвращает true, если это вещественное число с точкой, которое может быть представлено в целочисленном виде.
+console.log('11) ===== Number.isInteger() ======');
+console.log( Number.isInteger(Infinity)); // false
+console.log( Number.isInteger(NaN));  // false
+console.log( Number.isInteger(5.2)); // false
+console.log( Number.isInteger(0)); // true
+console.log( Number.isInteger(2e64)); // true
+console.log( Number.isInteger('0')); // false
 console.log('\n');

@@ -21,7 +21,7 @@ const positionContent = function positionBlockscontent(paramCont)
         setTimeout(() => {
             element.style.left = 0;
             htmlElements.itemText.forEach(el => {
-                el != element ? el.style.display = 'none' : '';
+                el !== element ? el.style.display = 'none' : '';
             });
         }, 600);
     }
