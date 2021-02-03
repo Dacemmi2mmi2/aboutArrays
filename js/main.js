@@ -968,3 +968,38 @@ console.log( isNaN(undefined)); // true
 console.log( isNaN({})); // true
 console.log( isNaN('blabla')); // true
 console.log('\n');
+
+
+// Number.isSafeInteger()
+// определяет, является ли переданное значение безопасным целым числом. Безопасное целое число это такое число, которое: может быть точно представлено числом IEEE-754 двойной точности и чьё представление IEEE-754 не может быть результатом округления любого другого целого числа, соответствующего представлению IEEE-754.
+console.log('13) ===== Number.isSafeInteger() ======');
+console.log( Number.isSafeInteger(3)); // true
+console.log( Number.isSafeInteger(Math.pow(2, 53))); // false
+console.log( Number.isSafeInteger(Math.pow(2, 53) - 1)); // true
+console.log( Number.isSafeInteger(NaN)); // false
+console.log( Number.isSafeInteger(Infinity)); // false
+console.log( Number.isSafeInteger('3')); // false
+console.log( Number.isSafeInteger(3.1)); // false
+console.log( Number.isSafeInteger(3.0)); // true
+console.log('\n');
+
+
+// Number.parseFloat( string)
+// разбирает строковый аргумент и возвращает число с плавающей запятой. Этот метод ведёт себя идентично глобальной функции parseFloat() и является частью ECMAScript 6 (его целью является модуляризация глобальных сущностей).
+console.log('14) ===== Number.parseFloat() =======');
+console.log( Number.parseFloat('str')); // NaN
+console.log( Number.parseFloat('234')); // 234 (type Number)
+console.log( Number.parseFloat('234.4')); // 234.4
+console.log('\n');
+
+
+// Number.parseInt( string, radix)
+// разбирает строковый аргумент и возвращает целое число. Этот метод ведёт себя идентично глобальной функции parseInt() и является частью ECMAScript 6 (его целью является модуляризация глобальных сущностей).
+console.log('15) ===== Number.parseInt() ======');
+console.log( Number.parseInt('str')); // NaN
+console.log( Number.parseInt('345')); // 345
+console.log( Number.parseInt('345.4')); // 345
+console.log( Number.parseInt('345.4', 10)); // 345
+console.log( Number.parseInt('345.4', 16)); // 837
+console.log( Number.parseInt('345.4', 8)); // 229
+console.log('\n');
