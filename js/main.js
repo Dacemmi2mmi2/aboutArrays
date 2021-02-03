@@ -951,3 +951,20 @@ console.log( Number.isInteger(0)); // true
 console.log( Number.isInteger(2e64)); // true
 console.log( Number.isInteger('0')); // false
 console.log('\n');
+
+
+// Number.isNaN( value)
+// определяет, является ли переданное значение NaN. Это более надёжная версия оригинальной глобальной функции isNaN(). В отличие от глобальной функции isNaN(), Number.isNaN() не имеет проблемы принудительного преобразования параметра в число. Это значит, что в него безопасно передавать значения, которые обычно превращаются в NaN, но на самом деле NaN не являются. Также это значит, что метод возвращает true только для числовых значений, имеющих значение NaN.
+console.log('12) ===== Number.isNaN() ========');
+console.log( Number.isNaN(NaN)); // true
+console.log( Number.isNaN(Number.NaN)); // true
+console.log( Number.isNaN(0 / 0)); // true
+console.log( Number.isNaN('NaN')); // false
+console.log( Number.isNaN(undefined)); // false
+console.log( Number.isNaN({})); // false
+console.log( Number.isNaN('blabla')); // false
+console.log( isNaN('NaN')); // true
+console.log( isNaN(undefined)); // true
+console.log( isNaN({})); // true
+console.log( isNaN('blabla')); // true
+console.log('\n');
