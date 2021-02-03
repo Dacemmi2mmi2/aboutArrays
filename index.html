@@ -3151,46 +3151,103 @@
                 <section id="Number_isSafeInteger" class="Number_isSafeInteger">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">()</span>
+                            13) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.isSafeInteger( testValue)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// определяет, является ли переданное значение безопасным целым числом. Безопасное целое число это такое число, которое: может быть точно представлено числом IEEE-754 двойной точности и чьё представление IEEE-754 не может быть результатом округления любого другого целого числа, соответствующего представлению IEEE-754.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="lightGreenColor">3</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="skyBlueColor">Math</span><span class="whiteColor">.</span><span class="yellowColor">pow</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">53</span><span class="whiteColor">)));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="skyBlueColor">Math</span><span class="whiteColor">.</span><span class="yellowColor">pow</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">53</span><span class="whiteColor">) -</span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="skyBlueColor">NaN</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="skyBlueColor">Infinity</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="brownColor">'3'</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="lightGreenColor">3.1</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isSafeInteger</span><span class="whiteColor">(</span><span class="lightGreenColor">3.0</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_parseFloat" class="Number_parseFloat">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">parseFloat</span><span class="whiteColor">()</span>
+                            14) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">parseFloat</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.parseFloat( string)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// разбирает строковый аргумент и возвращает число с плавающей запятой. Этот метод ведёт себя идентично глобальной функции parseFloat() и является частью ECMAScript 6 (его целью является модуляризация глобальных сущностей).</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseFloat</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">));</span><span class="greenColor"> // NaN</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseFloat</span><span class="whiteColor">(</span><span class="brownColor">'234'</span><span class="whiteColor">));</span><span class="greenColor"> // 234 (type Number)</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseFloat</span><span class="whiteColor">(</span><span class="brownColor">'234.4'</span><span class="whiteColor">));</span><span class="greenColor"> // 234.4 (type Number)</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_parseInt" class="Number_parseInt">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">()</span>
+                            15) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.parseInt( string, radix)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// разбирает строковый аргумент и возвращает целое число. Этот метод ведёт себя идентично глобальной функции parseInt() и является частью ECMAScript 6 (его целью является модуляризация глобальных сущностей).</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'str'</span><span class="whiteColor">));</span><span class="greenColor"> // NaN</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'345'</span><span class="whiteColor">));</span><span class="greenColor"> // 345 (type Number)</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'345.4'</span><span class="whiteColor">));</span><span class="greenColor"> // 345</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'345.4'</span><span class="whiteColor">, </span><span class="lightGreenColor">10</span><span class="whiteColor">));</span><span class="greenColor"> // 345</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'345.4'</span><span class="whiteColor">, </span><span class="lightGreenColor">16</span><span class="whiteColor">));</span><span class="greenColor"> // 837</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">parseInt</span><span class="whiteColor">(</span><span class="brownColor">'345.4'</span><span class="whiteColor">, </span><span class="lightGreenColor">8</span><span class="whiteColor">));</span><span class="greenColor"> // 229</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_toExponential" class="Number_toExponential">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toExponential</span><span class="whiteColor">()</span>
+                            16) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toExponential</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3203,7 +3260,7 @@
                 <section id="Number_toFixed" class="Number_toFixed">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toFixed</span><span class="whiteColor">()</span>
+                            17) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toFixed</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3216,7 +3273,7 @@
                 <section id="Number_toLocaleString" class="Number_toLocaleString">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">()</span>
+                            18) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3229,7 +3286,7 @@
                 <section id="Number_toPrecision" class="Number_toPrecision">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">()</span>
+                            19) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3242,7 +3299,7 @@
                 <section id="#Number_toSourse" class="#Number_toSourse">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
+                            20) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3255,7 +3312,7 @@
                 <section id="Number_toString" class="Number_toString">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
+                            21) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3268,7 +3325,7 @@
                 <section id="Number_valueOf" class="Number_valueOf">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
+                            22) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
