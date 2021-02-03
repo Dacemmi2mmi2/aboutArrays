@@ -3103,14 +3103,49 @@
                 <section id="Number_isNaN" class="Number_isNaN">
                     <h2>
                         <code>
-                            <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">()</span>
+                            12) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.isNaN( value)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// определяет, является ли переданное значение NaN. Это более надёжная версия оригинальной глобальной функции isNaN(). В отличие от глобальной функции isNaN(), Number.isNaN() не имеет проблемы принудительного преобразования параметра в число. Это значит, что в него безопасно передавать значения, которые обычно превращаются в NaN, но на самом деле NaN не являются. Также это значит, что метод возвращает true только для числовых значений, имеющих значение NaN.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="skyBlueColor">NaN</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="bluePrototype">NaN</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="lightGreenColor">0</span><span class="whiteColor"> / </span><span class="lightGreenColor">0</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="brownColor">'NaN'</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="blueFnArgColor">undefined</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">({}));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor"> Number</span><span class="whiteColor">.</span><span class="yellowColor">isNaN</span><span class="whiteColor">(</span><span class="brownColor">'blabla'</span><span class="whiteColor">));</span><span class="greenColor"> // false</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="yellowColor"> isNaN</span><span class="whiteColor">(</span><span class="brownColor">'NaN'</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="yellowColor"> isNaN</span><span class="whiteColor">(</span><span class="blueFnArgColor">undefined</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="yellowColor"> isNaN</span><span class="whiteColor">({}));</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="yellowColor"> isNaN</span><span class="whiteColor">(</span><span class="brownColor">'blabla'</span><span class="whiteColor">));</span><span class="greenColor"> // true</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_isSafeInteger" class="Number_isSafeInteger">
