@@ -1027,3 +1027,39 @@ console.log('18) ===== Number.toLocaleString() ======');
 console.log( 123456.789.toLocaleString('de-De', {style : 'currency', currency : 'EUR'})); // 123.456,79 €
 console.log( 123456.789.toLocaleString('ru-RU', {style : 'currency', currency : 'RUB'})); // 123 456,79 ₽
 console.log('\n');
+
+
+// Number.toPrecision( precision)
+// озвращает строку, представляющую объект Number с указанной точностью.
+console.log('19) ===== Number.toPrecision() ======');
+console.log( 5.123.toPrecision()); // 5.123
+console.log( 5.123.toPrecision(2)); // 5.1
+console.log( 5.123.toPrecision(1)); // 5
+console.log( 0.00123.toPrecision(1)); // 0.001
+console.log( 0.00123.toPrecision(2)); // 0.0012
+console.log( 1234.5.toPrecision(1)); // 1e+3
+console.log('\n');
+
+
+// Number.toSource()
+// возвращает строку, представляющую исходный код объекта.
+// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.
+console.log('20) ===== Number.toSource() =====');
+// console.log( Number.toSource()); // TypeError : toSource is not a function
+console.log('\n');
+
+
+// Number.toString( radix)
+// возвращает строковое представление указанного объекта Number. Метод toString() разбирает свой первый аргумент и пытается вернуть строковое представление в системе счисления с указанным основанием. Для оснований, больших 10, при обозначении цифр, больших 9, используются буквы латинского алфавита. Например, для шестнадцатеричных чисел (основание 16), используются буквы с a по f.
+console.log('21) ====== Number.toString() =====');
+console.log( (2345).toString()); // 2345
+console.log( (2345).toString(2)); // 100100101001
+console.log( (2345).toString(8)); // 4451
+console.log( (2345).toString(16)); // 929
+console.log('\n');
+
+
+// Number.valueOf()
+// возвращает примитивное значение объекта Number. Этот метод обычно вызывается внутренними механизмами движка JavaScript, а не явно в коде.
+console.log('22) ===== Number.valueOf() ======');
+console.log( (123).valueOf()); // 123
