@@ -3314,10 +3314,30 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toPrecision( precision)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// озвращает строку, представляющую объект Number с указанной точностью.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">5.123</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">());</span><span class="greenColor"> // 5.123</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">5.123</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 5.1</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">5.123</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">(</span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 5</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">0.00123</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">(</span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 0.001</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">0.00123</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 0.0012</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="lightGreenColor">1234.5</span><span class="whiteColor">.</span><span class="yellowColor">toPrecision</span><span class="whiteColor">(</span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 1e+3</span>
+                        </p>
                     </code>
                 </section>
                 <section id="#Number_toSourse" class="#Number_toSourse">
@@ -3327,10 +3347,18 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toSource()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// возвращает строку, представляющую исходный код объекта.</span>
+                        </p>
+                        <p>
+                            <span class="yellowColor">// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( </span><span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="yellowColor">toSource</span><span class="whiteColor">());</span><span class="greenColor"> // TypeError : toSource is not a function</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_toString" class="Number_toString">
@@ -3340,10 +3368,24 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toString( radix)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// возвращает строковое представление указанного объекта Number. Метод toString() разбирает свой первый аргумент и пытается вернуть строковое представление в системе счисления с указанным основанием. Для оснований, больших 10, при обозначении цифр, больших 9, используются буквы латинского алфавита. Например, для шестнадцатеричных чисел (основание 16), используются буквы с a по f.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">2345</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">()));</span><span class="greenColor"> // 2345</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">2345</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 100100101001</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">2345</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">8</span><span class="whiteColor">));</span><span class="greenColor"> // 4451</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">2345</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">16</span><span class="whiteColor">));</span><span class="greenColor"> // 929</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_valueOf" class="Number_valueOf">
@@ -3353,10 +3395,15 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.valueOf()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// возвращает примитивное значение объекта Number. Этот метод обычно вызывается внутренними механизмами движка JavaScript, а не явно в коде.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">123</span><span class="whiteColor">).</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // 123</span>
+                        </p>
                     </code>
                 </section>
             </div>
