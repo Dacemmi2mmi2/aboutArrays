@@ -3251,10 +3251,18 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toExponential( fractionDigits)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// возвращает строку, представляющую объект Number в экспоненциальной записи.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 77</span><span class="whiteColor">.</span><span class="lightGreenColor">123</span><span class="whiteColor">.</span><span class="yellowColor">toExponential</span><span class="whiteColor">());</span><span class="greenColor"> // 7.7123e+1</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 77</span><span class="whiteColor">.</span><span class="lightGreenColor">123</span><span class="whiteColor">.</span><span class="yellowColor">toExponential</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 7.71e+1</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_toFixed" class="Number_toFixed">
@@ -3264,10 +3272,18 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toFixed( digits)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// форматирует число, используя запись с фиксированной запятой.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 77.1278</span><span class="whiteColor">.</span><span class="yellowColor">toFixed</span><span class="whiteColor">());</span><span class="greenColor"> // 77 (type String)</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 77.1278</span><span class="whiteColor">.</span><span class="yellowColor">toFixed</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // 77.13</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_toLocaleString" class="Number_toLocaleString">
@@ -3277,10 +3293,18 @@
                         </code>
                     </h2>
                     <code>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <p>
+                            <span class="greenColor">// Number.toLocaleString( locale, options)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// возвращает строку с языко-зависимым представлением числа. Aргументы locales и options позволяют приложениям определять язык, чьё поведение и соглашения по форматированию которого оно хочет использовать. В старых реализациях, игнорирующих аргументы locales и options, используемая локаль и форма возвращённой строки целиком зависит от реализации.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 123456.789</span><span class="whiteColor">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">(</span><span class="brownColor">'de-De'</span><span class="whiteColor">, {</span><span class="skyBlueColor">style : </span><span class="brownColor">'currency'</span><span class="whiteColor">, </span><span class="skyBlueColor">currency : </span><span class="brownColor">'EUR'</span><span class="whiteColor">}));</span><span class="greenColor"> // 123.456,79 €</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="lightGreenColor"> 123456.789</span><span class="whiteColor">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">(</span><span class="brownColor">'ru-Ru'</span><span class="whiteColor">, {</span><span class="skyBlueColor">style : </span><span class="brownColor">'currency'</span><span class="whiteColor">, </span><span class="skyBlueColor">currency : </span><span class="brownColor">'RUB'</span><span class="whiteColor">}));</span><span class="greenColor"> // 123 456,79 ₽</span>
+                        </p>
                     </code>
                 </section>
                 <section id="Number_toPrecision" class="Number_toPrecision">
