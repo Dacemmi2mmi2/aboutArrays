@@ -1003,3 +1003,27 @@ console.log( Number.parseInt('345.4', 10)); // 345
 console.log( Number.parseInt('345.4', 16)); // 837
 console.log( Number.parseInt('345.4', 8)); // 229
 console.log('\n');
+
+
+// Number.toExponential( fractionDigits)
+// возвращает строку, представляющую объект Number в экспоненциальной записи.
+console.log('16) ===== Number.toExponential() =======');
+console.log( 77.123.toExponential()); // 7.7123e+1
+console.log( 77.123.toExponential(2)); // 7.71e+1
+console.log('\n');
+
+
+// Number.toExponential( digits)
+// форматирует число, используя запись с фиксированной запятой.
+console.log('17) ===== Number.toFixed() =======');
+console.log( 77.1278.toFixed()); // 77 (type String)
+console.log( 77.1278.toFixed(2)); // 77.13
+console.log('\n');
+
+
+// Number.toLocaleString( locale, options)
+// возвращает строку с языко-зависимым представлением числа. Aргументы locales и options позволяют приложениям определять язык, чьё поведение и соглашения по форматированию которого оно хочет использовать. В старых реализациях, игнорирующих аргументы locales и options, используемая локаль и форма возвращённой строки целиком зависит от реализации.
+console.log('18) ===== Number.toLocaleString() ======');
+console.log( 123456.789.toLocaleString('de-De', {style : 'currency', currency : 'EUR'})); // 123.456,79 €
+console.log( 123456.789.toLocaleString('ru-RU', {style : 'currency', currency : 'RUB'})); // 123 456,79 ₽
+console.log('\n');
