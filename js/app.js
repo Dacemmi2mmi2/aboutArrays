@@ -1,4 +1,6 @@
 const htmlElements = {
+    main : document.querySelector('.mainContainer'),
+    blockNavigation : document.querySelector('.blockNavigation'),
     itemsNavigation : document.querySelector('.itemNavigation'),
     itemNav : document.querySelectorAll('.nav'),
     itemText : document.querySelectorAll('.textContent'),
@@ -9,8 +11,7 @@ const positionContent = function positionBlockscontent(paramCont)
 {
     htmlElements.itemText.forEach(item => {
         item.style.left = 150 + '%';
-        if(item.classList[0].slice(12) === paramCont.slice(5))
-        {
+        if(item.classList[0].slice(12) === paramCont.slice(5)){
             item.style.display = 'block';
             show(item);
         }
@@ -37,10 +38,30 @@ const positionNav = function positionBlocksNavigation(paramNav)
 }
 
 
-htmlElements.itemsNavigation.addEventListener('click', event => {
-    if (event.target.closest('div.itemNavigation'))
-    {
-        positionContent(event.target.id);
-        positionNav(event.target.id);
+// for mobile ======
+const positionBlockNav = function closeBlockNavigation(paramWidth)
+{
+    if (paramWidth !== 0){
+        let widthBlockNav = Number(paramWidth.split('').reverse().splice(2).reverse().join(''));
+        htmlElements.blockNavigation.style.left = -widthBlockNav + 'px';
+    }else{
+        htmlElements.blockNavigation.style.left = paramWidth + 'px';
+    }
+}
+// =======
+
+
+htmlElements.main.addEventListener('click', event => {
+    if (event.target.closest('div.itemNavigation')){
+        if(event.target.id === 'closeMenuItemNavigation'){
+            positionBlockNav(getComputedStyle(htmlElements.blockNavigation).width);
+        }else{
+            positionContent(event.target.id);
+            positionNav(event.target.id);
+        }
+    }
+
+    if(event.target.closest('div.openBlockNavigation')){
+        positionBlockNav(0);
     }
 });
