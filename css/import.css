@@ -1,3 +1,13 @@
 @import 'reset.css';
 @import 'main.css';
 @import 'max1920px.css';
+@import 'max1700px.css';
+
+@import 'max1420px.css';
+@import 'max1220px.css';
+@import 'max1080px.css';
+@import 'max860px.css';
+
+@import 'max720px.css';
+@import 'max570px.css';
+@import 'max475px.css';

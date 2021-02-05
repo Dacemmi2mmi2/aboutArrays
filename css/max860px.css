@@ -1,0 +1,8 @@
+@media screen and (max-width: 860px)
+{
+    .mainContainer .blockNavigation
+    {
+        left : -60%;
+        width: 60%;
+    }
+}

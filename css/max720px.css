@@ -1,0 +1,11 @@
+@media screen and (max-width: 720px)
+{
+    .mainContainer .blockNavigation
+    {
+        left : -75%;
+        width: 75%;
+    }
+
+
+    .hide{display: none;}
+}

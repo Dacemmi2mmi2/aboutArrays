@@ -1,13 +1,10 @@
 
 ::-webkit-scrollbar
 {
-    /*width: 4px; /* ширина для вертикального скролла */
+    width: 4px; /* ширина для вертикального скролла */
     height: 2px; /* высота для горизонтального скролла */
     background-color: #143861;
 }
-
-
-html{scroll-behavior: smooth;}
 
 
 body
@@ -20,16 +17,8 @@ body
 .mainContainer
 {
     width: 100%;
+    height: 100%;
     display: flex;
-}
-@media screen and (max-width: 600px)
-{
-    .mainContainer
-    {
-        width: 100%;
-        margin: 0;
-        padding: 10px 0 0 0;
-    }
 }
 
 
@@ -54,6 +43,7 @@ body
     cursor: pointer;
 }
 
+
 .blockNavigation .itemNavigation p:first-child
 {
     margin: 10px 0 0 0;
@@ -62,10 +52,9 @@ body
 }
 
 
-
 .blockNavigation p
 {
-   margin: 0 20px 0 20px;
+   margin: 0 15px 0 15px;
    font-size: 19px;
    padding: 5px 0 5px 0;
    border: solid 1px #252526;
@@ -75,9 +64,8 @@ body
 
 
 .blockNavigation p:hover{border: solid 1px white;}
-
-
 .blockNavigation p:last-child{margin-bottom: 30px;}
+.blockNavigation .close{display: none;}
 
 
 .blockNavigation p a
@@ -86,19 +74,57 @@ body
     padding: 0 0 0 20px;
 }
 
-.contentAboutString,
-.contentAboutArrays
+
+.navigationString,
+.navigationArray,
+.navigationNumber
 {
     position: absolute;
+    transition: left 1s ease-in-out;
+    left: -150%;
+}
+
+
+.mainContainer .openBlockNavigation{display: none;}
+
+
+.mainContainer .contentBackGround
+{
+    width: 80%;
+    height: 100vh;
+    margin: 0 0 0 20%;
+    background: url('../img/backGround.png') no-repeat center center;
+    background-size: contain;
+}
+
+
+.mainContainer .blockContent
+{
     width: 80%;
     margin: 0 0 0 20%;
+    position: fixed;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.contentAboutString,
+.contentAboutArray,
+.contentAboutNumber
+{
+    position: absolute;
+    left: 150%;
     padding: 20px 0 0 0;
     background-color: #1e1e1e;
+    transition: left .6s ease-in-out;
 }
 
 
 .contentAboutString section,
-.contentAboutArrays section
+.contentAboutArray section,
+.contentAboutNumber section
 {
     margin: 0 0 50px 0;
     padding: 0 20px 0 20px;
@@ -107,40 +133,28 @@ body
 
 .mainContainer h2
 {
-    width: 100%;
     color: white;
     font-size: 30px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px gray;
 }
-@media screen and (max-width: 450px)
-{
-    .mainContainer h2{font-size: 25px;}
-    .mainContainer h2 .hide{display: none;}
-}
 
 
-.contentAboutArrays p,
-.contentAboutString p
+.contentAboutArray p,
+.contentAboutString p,
+.contentAboutNumber p
 {
     font-size: 19px;
     line-height: 1.1;
     padding: 5px 0 2px 0;
 }
-@media screen and (max-width: 450px)
-{
-    .mainContainer p
-    {
-        line-height: 1.3;
-        font-size: 16px;
-        margin: 0 5px 0 5px;
-    }
-}
 
 
-.contentAboutArrays p.mLeft,
-.contentAboutString p.mLeft
+.contentAboutArray p.mLeft,
+.contentAboutString p.mLeft,
+.contentAboutNumber p.mLeft
 {margin-left: 30px;}
+
 
 .greenColor{color: #6a8a35;}
 .skyBlueColor{color: #8cdcfe;}
