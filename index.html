@@ -11,6 +11,9 @@
     <main class="mainContainer">
         <div class="blockNavigation">
             <div class="itemNavigation">
+                <div class="close">
+                    <span id="closeMenuItemNavigation">&#10006;</span>
+                </div>
                 <code>
                     <p>what you'll read?</p>
                     <p id="aboutArray">Array</p>
@@ -18,7 +21,7 @@
                     <p id="aboutString">String</p>
                 </code>
             </div>
-            <!-- <div class="navigationString nav">
+            <div class="navigationString nav">
                 <code>
                     <p>
                         <a href="#Srting_fromCharCode">
@@ -251,8 +254,8 @@
                         </a>
                     </p>
                 </code>
-            </div> -->
-            <!-- <div class="navigationArray nav">
+            </div>
+            <div class="navigationArray nav">
                 <code>
                     <p>
                         <a href="#Array_from">
@@ -430,7 +433,7 @@
                         </a>
                     </p>
                 </code>
-            </div> -->
+            </div>
             <div class="navigationNumber nav">
                 <code>
                     <p>
@@ -529,7 +532,7 @@
                         </a>
                     </p>
                     <p>
-                        <a href="#Number_toSourse">
+                        <a href="#Number_toSource">
                             <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
                         </a>
                     </p>
@@ -546,8 +549,14 @@
                 </code>
             </div>
         </div>
+        <div class="contentBackGround"></div> 
+        <div class="openBlockNavigation">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> 
         <div class="blockContent">
-            <!-- <div class="contentAboutArray textContent">
+            <div class="contentAboutArray textContent">
                 <section id="Array_from" class="Array_from">
                     <h2>
                         <code>
@@ -1636,8 +1645,8 @@
                         </p>
                     </code>
                 </section>
-            </div> -->
-            <!-- <div class="contentAboutString textContent">
+            </div>
+            <div class="contentAboutString textContent">
                 <section id="Srting_fromCharCode" class="Srting_fromCharCode">
                     <h2>
                         <code>
@@ -1655,10 +1664,10 @@
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="lightGreenColor">65</span><span class="whiteColor">, </span><span class="lightGreenColor">66</span><span class="whiteColor">, </span><span class="lightGreenColor">67</span><span class="whiteColor">));</span><span class="greenColor"> // @ABC</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor">194564</span><span class="whiteColor">));</span><span class="greenColor"> // </span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor"> 194564</span><span class="whiteColor">));</span><span class="greenColor"> // </span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor">0x2F804</span><span class="whiteColor">));</span><span class="greenColor"> // </span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor"> 0x2F804</span><span class="whiteColor">));</span><span class="greenColor"> // </span>
                         </p>
                     </code>
                 </section>
@@ -1679,10 +1688,10 @@
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCodePoint</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="lightGreenColor">65</span><span class="whiteColor">, </span><span class="lightGreenColor">66</span><span class="whiteColor">, </span><span class="lightGreenColor">67</span><span class="whiteColor">));</span><span class="greenColor"> // @ABC</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor">0x2F804</span><span class="whiteColor">));</span><span class="greenColor"> // 你</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor"> 0x2F804</span><span class="whiteColor">));</span><span class="greenColor"> // 你</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor">194564</span><span class="whiteColor">));</span><span class="greenColor"> // 你</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="yellowColor">fromCharCode</span><span class="whiteColor">(</span><span class="lightGreenColor"> 194564</span><span class="whiteColor">));</span><span class="greenColor"> // 你</span>
                         </p>
                     </code>
                 </section>
@@ -1707,7 +1716,7 @@
                             <span class="blueFnArgColor">let </span><span class="skyBlueColor">myString </span><span class="whiteColor">= </span><span class="brownColor">'someText'</span><span class="whiteColor">;</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">myString</span><span class="whiteColor">.</span><span class="yellowColor">anchor</span><span class="whiteColor">(</span><span class="brownColor">'title'</span><span class="whiteColor">);</span><span class="greenColor"> // &lt;a name="title"&gt;someText&lt;/a&gt;</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">myString</span><span class="whiteColor">.</span><span class="yellowColor">anchor</span><span class="whiteColor">(</span><span class="brownColor"> 'title'</span><span class="whiteColor">);</span><span class="greenColor"> // &lt;a name="title"&gt;someText&lt;/a&gt;</span>
                         </p>
                     </code>
                 </section>
@@ -1825,7 +1834,7 @@
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'ABC'</span><span class="whiteColor">.</span><span class="yellowColor">chatCodeAt</span><span class="whiteColor">(<span class="lightGreenColor">23</span><span class="whiteColor">));</span></span><span class="greenColor"> // NaN</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'\uD800\uDC00'</span><span class="whiteColor">.</span><span class="yellowColor">chatCodeAt</span><span class="whiteColor">(<span class="lightGreenColor">0</span><span class="whiteColor">));</span></span><span class="greenColor"> // 55296</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor"> '\uD800\uDC00'</span><span class="whiteColor">.</span><span class="yellowColor">chatCodeAt</span><span class="whiteColor">(<span class="lightGreenColor">0</span><span class="whiteColor">));</span></span><span class="greenColor"> // 55296</span>
                         </p>
                     </code>
                 </section>
@@ -1852,7 +1861,7 @@
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'ABC'</span><span class="whiteColor">.</span><span class="yellowColor">codePointAt</span><span class="whiteColor">(<span class="lightGreenColor">23</span><span class="whiteColor">));</span></span><span class="greenColor"> // undefined</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'\uD800\uDC00'</span><span class="whiteColor">.</span><span class="yellowColor">codePointAt</span><span class="whiteColor">(<span class="lightGreenColor">0</span><span class="whiteColor">));</span></span><span class="greenColor"> // 65536</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor"> '\uD800\uDC00'</span><span class="whiteColor">.</span><span class="yellowColor">codePointAt</span><span class="whiteColor">(<span class="lightGreenColor">0</span><span class="whiteColor">));</span></span><span class="greenColor"> // 65536</span>
                         </p>
                     </code>
                 </section>
@@ -1939,7 +1948,7 @@
                             <span class="skyBlueColor">// элемент &lt;font&gt; был удалён из HTML5 и больше не должен использоваться. Вместо него веб-разработчикам следует использовать свойства CSS.</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'ab'</span><span class="whiteColor">.</span><span class="yellowColor">fontcolor</span><span class="whiteColor">(</span><span class="brownColor">'green'</span><span class="whiteColor">));</span><span class="greenColor"> // &lt;font color="green"&gt;ab&lt;/font&gt;</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'ab'</span><span class="whiteColor">.</span><span class="yellowColor">fontcolor</span><span class="whiteColor">(</span><span class="brownColor"> 'green'</span><span class="whiteColor">));</span><span class="greenColor"> // &lt;font color="green"&gt;ab&lt;/font&gt;</span>
                         </p>
                     </code>
                 </section>
@@ -1967,7 +1976,7 @@
                         </p>
                     </code>
                 </section>
-                <section id="String_inclides" class="String_inclides">
+                <section id="String_includes" class="String_includes">
                     <h2>
                         <code>
                             15) <span class="blueGreenColor">String</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">includes</span><span class="whiteColor">()</span>
@@ -2086,7 +2095,7 @@
                             <span class="redColor">// Эта возможность была удалена из веб-стандартов. Хотя некоторые браузеры по-прежнему могут поддерживать её, она находится в процессе удаления. Не используйте её ни в старых, ни в новых проектах. Страницы или веб-приложения, использующие её, могут в любой момент сломаться.</span>
                         </p>
                         <p>
-                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'new str'</span><span class="whiteColor">.</span><span class="yellowColor">link</span><span class="whiteColor">(</span><span class="brownColor">'link'</span><span class="whiteColor">));</span><span class="greenColor"> // &lt;a href="link"&gt;new str&lt;/i&gt;</span>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="brownColor">'new str'</span><span class="whiteColor">.</span><span class="yellowColor">link</span><span class="whiteColor">(</span><span class="brownColor"> 'link'</span><span class="whiteColor">));</span><span class="greenColor"> // &lt;a href="link"&gt;new str&lt;/i&gt;</span>
                         </p>
                     </code>
                 </section>
@@ -2617,7 +2626,7 @@
                     </h2>
                     <code>
                         <p>
-                            <span class="greenColor">// String.prototype.toLocaleLowerCase()</span>
+                            <span class="greenColor">// String.toLocaleLowerCase()</span>
                         </p>
                         <p>
                             <span class="greenColor">// возвращает значение строки, преобразованное в нижний регистр согласно правилам преобразования регистра локали. Метод toLocaleLowerCase() не изменяет значение самой строки. В большинстве случаев он возвращает тот же результат, что и метод toLowerCase(), но для некоторых локалей, например, турецкой, в которой правила преобразования регистра отличаются от правил по умолчанию, принятых в Юникоде, он может вернуть другой результат.</span>
@@ -2635,7 +2644,7 @@
                     </h2>
                     <code>
                         <p>
-                            <span class="greenColor">// String.prototype.toLocaleUpperCase()</span>
+                            <span class="greenColor">// String.toLocaleUpperCase()</span>
                         </p>
                         <p>
                             <span class="greenColor">// Метод toLocaleUpperCase() возвращает значение строки, преобразованное в верхний регистр согласно правилам преобразования регистра локали. Метод toLocaleUpperCase() не изменяет значение самой строки. В большинстве случаев он возвращает тот же результат, что и метод toUpperCase(), но для некоторых локалей, например, турецкой, в которой правила преобразования регистра отличаются от правил по умолчанию, принятых в Юникоде, он может вернуть другой результат.</span>
@@ -2800,7 +2809,7 @@
                         </p>
                     </code>
                 </section>
-            </div> -->
+            </div>
             <div class="contentAboutNumber textContent">
                 <section id="Number_EPSILON" class="Number_EPSILON">
                     <h2>
@@ -3340,10 +3349,10 @@
                         </p>
                     </code>
                 </section>
-                <section id="#Number_toSourse" class="#Number_toSourse">
+                <section id="Number_toSource" class="Number_toSource">
                     <h2>
                         <code>
-                            20) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
+                            20) <span class="blueGreenColor">Number</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSource</span><span class="whiteColor">()</span>
                         </code>
                     </h2>
                     <code>
@@ -3409,7 +3418,7 @@
             </div>
         </div>
     </main>
-    <!-- <script src="js/app.js"></script> -->
-    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
