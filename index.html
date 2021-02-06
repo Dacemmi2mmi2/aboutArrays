@@ -19,6 +19,7 @@
                     <p id="aboutArray">Array</p>
                     <p id="aboutNumber">Number</p>
                     <p id="aboutString">String</p>
+                    <p id="aboutBigInt">BigInt</p>
                 </code>
             </div>
             <div class="navigationString nav">
@@ -548,6 +549,35 @@
                     </p>
                 </code>
             </div>
+            <div class="navigationBigInt nav">
+                <code>
+                    <p>
+                        <a href="#BigInt_asIntN">
+                            <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#BigInt_asUintN">
+                            <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asUintN</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#BigInt_toLocaleString">
+                            <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">toLocaleString</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#BigInt_toString">
+                            <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">toString</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#BigInt_valueOf">
+                            <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">valueOf</span>
+                        </a>
+                    </p>
+                </code>
+            </div>
         </div>
         <div class="contentBackGround"></div> 
         <div class="openBlockNavigation">
@@ -880,7 +910,7 @@
                             <span class="greenColor">// Array.prototype.find( callback(item, index, arr))</span>
                         </p>
                         <p>
-                            <span class="greenColor">// возвращает значение первого найденного в массиве элемента, которое удовлетворяет условию переданному в callback фукции. В противном слуучае вернет undefined</span>
+                            <span class="greenColor">// возвращает значение первого найденного в массиве элемента, которое удовлетворяет условию переданному в callback фукции. В противном случае вернет undefined</span>
                         </p>
                         <p>
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">, </span><span class="lightGreenColor">6</span><span class="whiteColor">].</span><span class="yellowColor">find</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor"> &gt; </span><span class="lightGreenColor">1</span><span class="whiteColor">));</span><span class="greenColor"> // 2</span>
@@ -2200,7 +2230,7 @@
                             <span class="pinkColor">for </span><span class="whiteColor">(</span><span class="blueFnArgColor">let </span><span class="skyBlueColor">i </span><span class="whiteColor">= </span><span class="lightGreenColor">0</span><span class="whiteColor">; </span><span class="skyBlueColor">i </span><span class="whiteColor">&lt; </span><span class="skyBlueColor">valueForm</span><span class="whiteColor">.</span><span class="skyBlueColor">length</span><span class="whiteColor">; </span><span class="skyBlueColor">i </span><span class="whiteColor">++){</span>
                         </p>
                         <p class="mLeft">
-                            <span class="yellowColor">sort</span><span class="whiteColor">(</span><span class="skyBlueColor">valueStr</span><span class="whiteColor">.</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="yellowColor">normalize</span><span class="whiteColor">(</span><span class="skyBlueColor">valueForm</span><span class="whiteColor">[</span><span class="skyBlueCoolor">i</span><span class="whiteColor">])));</span>
+                            <span class="yellowColor">sort</span><span class="whiteColor">(</span><span class="skyBlueColor">valueStr</span><span class="whiteColor">.</span><span class="yellowColor">map</span><span class="whiteColor">(</span><span class="skyBlueColor">item</span><span class="blueFnArgColor"> =&gt; </span><span class="skyBlueColor">item</span><span class="whiteColor">.</span><span class="yellowColor">normalize</span><span class="whiteColor">(</span><span class="skyBlueColor">valueForm</span><span class="whiteColor">[</span><span class="skyBlueColor">i</span><span class="whiteColor">])));</span>
                         </p>
                         <p>
                             <span class="whiteColor">}</span>
@@ -2215,10 +2245,10 @@
                             <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> &lt; </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">1 </span><span class="whiteColor">};</span>
                         </p>
                         <p class="mLeft">
-                            <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> === </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">0 </span><span class="whiteColor">};</span>
+                            <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> === </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="lightGreenColor">0 </span><span class="whiteColor">};</span>
                         </p>
                         <p class="mLeft">
-                            <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> &gt; </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="whiteColor">-</span><span class="lightGreenColor">1 </span><span class="whiteColor">};</span>
+                            <span class="pinkColor">if </span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor"> &gt; </span><span class="skyBlueColor">b</span><span class="whiteColor">){</span><span class="pinkColor"> return </span><span class="lightGreenColor">1 </span><span class="whiteColor">};</span>
                         </p>
                         <p class="mLeft">
                             <span class="whiteColor">});</span>
@@ -3412,6 +3442,155 @@
                         </p>
                         <p>
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">( (</span><span class="lightGreenColor">123</span><span class="whiteColor">).</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // 123</span>
+                        </p>
+                    </code>
+                </section>
+            </div>
+            <div class="contentAboutBigInt textContent">
+                <section id="BigInt_asIntN" class="BigInt_asIntN">
+                    <h2>
+                        <code>
+                            1) <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// BigInt.asIntN(width, bigint)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// это статический метод, который позволяет перенести BigInt-значение в целое число со знаком между  -2<sup>ширина-1</sup> and 2<sup>ширина-1</sup> -1. Вщзрващает значение bigint по модулю 2<sup>width</sup> как целое число со знаком.</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">const </span><span class="bluePrototype">max64 </span><span class="whiteColor">= </span><span class="lightGreenColor">2</span><span class="blueFnArgColor">n</span><span class="whiteColor"> ** (</span><span class="lightGreenColor">64</span><span class="blueFnArgColor">n</span><span class="whiteColor"> - </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">) - </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">;</span>        
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">const </span><span class="bluePrototype">max128 </span><span class="whiteColor">= </span><span class="lightGreenColor">2</span><span class="blueFnArgColor">n</span><span class="whiteColor"> ** (</span><span class="lightGreenColor">128</span><span class="blueFnArgColor">n</span><span class="whiteColor"> - </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">) - </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">;</span>        
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="bluePrototype">max64</span><span class="whiteColor">);</span><span class="greenColor"> // 9223372036854775807n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="bluePrototype">max128</span><span class="whiteColor">);</span><span class="greenColor"> // 170141183460469231731687303715884105727n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="bluePrototype">max64</span><span class="whiteColor">));</span><span class="greenColor"> // 9223372036854775807n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="bluePrototype">max128</span><span class="whiteColor">));</span><span class="greenColor"> // 170141183460469231731687303715884105727n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="bluePrototype">max64</span><span class="whiteColor"> + </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">));</span><span class="greenColor"> // -9223372036854775808n отрицательное число из-за переполнения</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span><span class="whiteColor">(</span><span class="lightGreenColor">128</span><span class="whiteColor">, </span><span class="bluePrototype">max128</span><span class="whiteColor"> + </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">));</span><span class="greenColor"> // -170141183460469231731687303715884105728n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asIntN</span><span class="whiteColor">(</span><span class="lightGreenColor">128</span><span class="whiteColor">, </span><span class="bluePrototype">max64</span><span class="whiteColor"> + </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">));</span><span class="greenColor"> // 9223372036854775808n положительное число так как нет переполнения</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="BigInt_asUintN" class="BigInt_asUintN">
+                    <h2>
+                        <code>
+                            2) <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asUintN</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// BigInt.asUintN(width, bigint)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// статический метод используется для преобразования значения BigInt в целое число без знака от 0 до 2<sup>width</sup>-1.</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">const </span><span class="bluePrototype">max </span><span class="whiteColor">= </span><span class="lightGreenColor">2</span><span class="blueFnArgColor">n</span><span class="whiteColor"> ** </span><span class="lightGreenColor">64</span><span class="blueFnArgColor">n</span><span class="whiteColor"> - </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">;</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="bluePrototype">max</span><span class="whiteColor">);</span><span class="greenColor"> // 18446744073709551615n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asUintN</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="bluePrototype">max</span><span class="whiteColor">));</span><span class="greenColor"> // 18446744073709551615n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asUintN</span><span class="whiteColor">(</span><span class="lightGreenColor">64</span><span class="whiteColor">, </span><span class="bluePrototype">max</span><span class="whiteColor"> + </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">));</span><span class="greenColor"> // 0n из-за переполнения</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="yellowColor">asUintN</span><span class="whiteColor">(</span><span class="lightGreenColor">128</span><span class="whiteColor">, </span><span class="bluePrototype">max</span><span class="whiteColor"> + </span><span class="lightGreenColor">1</span><span class="blueFnArgColor">n</span><span class="whiteColor">));</span><span class="greenColor"> // 18446744073709551616n</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="BigInt_toLocaleString" class="BigInt_toLocaleString">
+                    <h2>
+                        <code>
+                            3) <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toLocaleString</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// BigInt.prototype.toLocaleString( locales, options)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод возвращает строку с зависящим от языка представлением этого BigInt</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">const </span><span class="bluePrototype">bigint </span><span class="whiteColor">= </span><span class="lightGreenColor">123456789123456789</span><span class="blueFnArgColor">n</span><span class="whiteColor">;</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="bluePrototype">bigint</span><span class="whiteColor">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">(</span><span class="brownColor">'de-De'</span><span class="whiteColor">, </span><span class="whiteColor">{</span><span class="skyBlueColor"> style : </span><span class="brownColor">'currency'</span><span class="whiteColor">, </span><span class="skyBlueColor"> currency : </span><span class="brownColor">'EUR'</span><span class="whiteColor">}));</span><span class="greenColor"> // 123.456.789.123.456.789,00 €</span>        
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="bluePrototype">bigint</span><span class="whiteColor">.</span><span class="yellowColor">toLocaleString</span><span class="whiteColor">(</span><span class="brownColor">'ru-RU'</span><span class="whiteColor">, </span><span class="whiteColor">{</span><span class="skyBlueColor"> style : </span><span class="brownColor">'currency'</span><span class="whiteColor">, </span><span class="skyBlueColor"> currency : </span><span class="brownColor">'RUB'</span><span class="whiteColor">}));</span><span class="greenColor"> // 123 456 789 123 456 789,00 ₽</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="BigInt_toString" class="BigInt_toString">
+                    <h2>
+                        <code>
+                            4) <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span>                            
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// BigInt.prototype.toString( radix)</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод возвращает строку, представляющую указанный объект BigInt. Завершающее «n» не является частью строки.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((</span><span class="lightGreenColor">17</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">());</span><span class="greenColor"> // '17'</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((</span><span class="lightGreenColor">66</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // '1000010'</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((</span><span class="lightGreenColor">254</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">16</span><span class="whiteColor">));</span><span class="greenColor"> // 'fe'</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((-</span><span class="lightGreenColor">10</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // '-1010'</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((-</span><span class="lightGreenColor">0xff</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">toString</span><span class="whiteColor">(</span><span class="lightGreenColor">2</span><span class="whiteColor">));</span><span class="greenColor"> // '-11111111'</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="BigInt_valueOf" class="BigInt_valueOf">
+                    <h2>
+                        <code>
+                            5) <span class="blueGreenColor">BigInt</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// BigInt.prototype.valueOf()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод возвращает обернутое примитивное значение объекта BigInt.</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">((</span><span class="lightGreenColor">3</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // 3n</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueFnArgColor">typeof</span><span class="whiteColor"> (</span><span class="lightGreenColor">3</span><span class="blueFnArgColor">n</span><span class="whiteColor">).</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // bigint</span>
                         </p>
                     </code>
                 </section>
