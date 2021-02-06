@@ -60,8 +60,5 @@ htmlElements.main.addEventListener('click', event => {
             positionNav(event.target.id);
         }
     }
-
-    if(event.target.closest('div.openBlockNavigation')){
-        positionBlockNav(0);
-    }
+    event.target.closest('div.openBlockNavigation') ? positionBlockNav(0) : '';
 });
