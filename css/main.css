@@ -1,7 +1,7 @@
 
 ::-webkit-scrollbar
 {
-    width: 4px; /* ширина для вертикального скролла */
+    width: 2px; /* ширина для вертикального скролла */
     height: 2px; /* высота для горизонтального скролла */
     background-color: #143861;
 }
@@ -77,7 +77,8 @@ body
 
 .navigationString,
 .navigationArray,
-.navigationNumber
+.navigationNumber,
+.navigationBigInt
 {
     position: absolute;
     transition: left 1s ease-in-out;
@@ -112,7 +113,8 @@ body
 
 .contentAboutString,
 .contentAboutArray,
-.contentAboutNumber
+.contentAboutNumber,
+.contentAboutBigInt
 {
     position: absolute;
     left: 150%;
@@ -124,7 +126,8 @@ body
 
 .contentAboutString section,
 .contentAboutArray section,
-.contentAboutNumber section
+.contentAboutNumber section,
+.contentAboutBigInt section
 {
     margin: 0 0 50px 0;
     padding: 0 20px 0 20px;
@@ -142,7 +145,8 @@ body
 
 .contentAboutArray p,
 .contentAboutString p,
-.contentAboutNumber p
+.contentAboutNumber p,
+.contentAboutBigInt p
 {
     font-size: 19px;
     line-height: 1.1;
@@ -152,7 +156,8 @@ body
 
 .contentAboutArray p.mLeft,
 .contentAboutString p.mLeft,
-.contentAboutNumber p.mLeft
+.contentAboutNumber p.mLeft,
+.contentAboutBigInt p.mLeft
 {margin-left: 30px;}
 
 
