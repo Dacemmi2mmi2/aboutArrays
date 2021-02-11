@@ -1,55 +1,70 @@
-// bigInt
-
-
-// BigInt.asIntN(width, bigint)
-// это статический метод, который позволяет перенести BigInt-значение в целое число со знаком между  -2 ** ширина-1 and 2 ** (ширина-1) -1. Вщзрващает значение bigint по модулю 2 ** width как целое число со знаком.
-console.log('1) ===== BigInt.asIntN() ======');
-const max64 = 2n ** (64n -1n) - 1n;
-console.log(max64); // 9223372036854775807n
-console.log(BigInt.asIntN(64, max64)); // 9223372036854775807n
-console.log(BigInt.asIntN(64, max64 + 1n)); // -9223372036854775808n отрицательное число из-за переполнения
-
-const max128 = 2n ** (128n -1n) - 1n; // 170141183460469231731687303715884105727n
-console.log(BigInt.asIntN(128, max128)); // 170141183460469231731687303715884105727n
-console.log(BigInt.asIntN(128, max128 + 1n)); // -170141183460469231731687303715884105728
-console.log(BigInt.asIntN(128, max64 + 1n)); // 9223372036854775808n
+// Math.E
+// Свойство Math.E представляет основание натурального логарифма, e, приблизительно равное 2,718.
+console.log('1) ==== Math.E =======');
+console.log(Math.E); // 2.718281828459045
 console.log('\n');
 
 
-// BigInt.asUintN(width, bigint)
-// статический метод используется для преобразования значения BigInt в целое число без знака от 0 до 2width-1.
-console.log('2) ===== BigInt.asUintN() ======')
-const max = 2n ** 64n - 1n;
-console.log(max); // 18446744073709551615n
-console.log(BigInt.asUintN(64, max)); // 18446744073709551615n
-console.log(BigInt.asUintN(64, max + 1n)); // 0n из-за переполнения
-console.log(BigInt.asUintN(128, max + 1n)); // 18446744073709551616n
+// Math.LN10
+// Свойство Math.LN10 представляет натуральный логарифм из 10, приблизительно равный 2,302
+console.log('2) ==== Math.LN10 =======');
+console.log(Math.LN10); // 2.302585092994046
 console.log('\n');
 
 
-// BigInt.prototype.toLocaleString( locales, options)
-// Метод возвращает строку с зависящим от языка представлением этого BigInt
-console.log('3) ===== BigInt.prototype.toLocaleString() =====');
-const bigint = 123456789123456789n;
-console.log(bigint.toLocaleString('de-DE', { style: 'currency', currency: 'EUR' })); // 123.456.789.123.456.789,00 €
-console.log(bigint.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' })); // 123 456 789 123 456 789,00 ₽
+// Math.LN10
+// Свойство Math.LN2 представляет натуральный логарифм из 2, приблизительно равный 0,693
+console.log('3) ==== Math.LN2 =======');
+console.log(Math.LN2); // 0.6931471805599453
 console.log('\n');
 
 
-// BigInt.prototype.toString( radix)
-// Метод возвращает строку, представляющую указанный объект BigInt. Завершающее «n» не является частью строки.
-console.log('4) ===== BigInt.prototype.toString() =====');
-console.log((17n).toString()); // '17'
-console.log((66n).toString(2)); // '1000010'
-console.log((254n).toString(16)); // 'fe'
-console.log((-10n).toString(2)); // '-1010'
-console.log((-0xffn).toString(2)); // '-11111111'
+// Math.LOG10E
+// Свойство Math.LOG10E представляет десятичный логарифм из e, приблизительно равный 0,434
+console.log('4) ==== Math.LOG10E =======');
+console.log(Math.LOG10E); // 0.4342944819032518
 console.log('\n');
 
 
-// BigInt.prototype.valueOf()
-// Метод возвращает обернутое примитивное значение объекта BigInt.
-console.log('5) ===== BigInt.prototype.valueOf() =======');
-console.log((3n).valueOf()); // 3n
-console.log(typeof (3n).valueOf()); // bigint
-console.log('\n\n');
+// Math.LOG2E
+// Свойство Math.LOG10E представляет двоичный логарифм из e, приблизительно равный 1,442
+console.log('5) ==== Math.LOG2E =======');
+console.log(Math.LOG2E); // 1.4426950408889634
+console.log('\n');
+
+
+// Math.PI
+// Свойство Math.PI представляет отношение длины окружности круга к его диаметру, приблизительно равное 3,14159
+console.log('6) ==== Math.PI =======');
+console.log(Math.PI); // 3.141592653589793
+console.log('\n');
+
+
+// Math.SQRT1_2
+// Свойство Math.SQRT1_2 представляет квадратный корень из 1/2, приблизительно равный 0,707
+console.log('7) ==== Math.SQRT1_2 =======');
+console.log(Math.SQRT1_2); // 0.7071067811865476
+console.log('\n');
+
+
+// Math.SQRT2
+// Свойство Math.SQRT2 представляет квадратный корень из 2, приблизительно равный 1,414
+console.log('8) ==== Math.SQRT2 =======');
+console.log(Math.SQRT2); // 1.4142135623730951
+console.log('\n');
+
+
+// Math.abs(x)
+// Метод Math.abs() возвращает абсолютное значение числа.
+console.log(Math.abs('-1')); // 1
+console.log(Math.abs(-2)); // 2
+console.log(Math.abs(null)); // 0
+console.log(Math.abs('')); // 0
+console.log(Math.abs([])); // 0
+console.log(Math.abs([2])); // 2
+console.log(Math.abs([1,2])); // NaN
+console.log(Math.abs({})); // NaN
+console.log(Math.abs('string')); // NaN
+console.log(Math.abs()); // NaN  
+console.log('6) ==== Math.abs(x) =======');
+console.log('\n');
