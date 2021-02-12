@@ -56,6 +56,7 @@ console.log('\n');
 
 // Math.abs(x)
 // Метод Math.abs() возвращает абсолютное значение числа.
+console.log('9) ==== Math.abs(x) =======');
 console.log(Math.abs('-1')); // 1
 console.log(Math.abs(-2)); // 2
 console.log(Math.abs(null)); // 0
@@ -66,5 +67,55 @@ console.log(Math.abs([1,2])); // NaN
 console.log(Math.abs({})); // NaN
 console.log(Math.abs('string')); // NaN
 console.log(Math.abs()); // NaN  
-console.log('6) ==== Math.abs(x) =======');
+console.log('\n');
+
+
+// Math.acos(x)
+// Метод Math.acos() возвращает арккосинус числа (в радианах)
+console.log('10) ==== Math.acos(x) =======');
+console.log(Math.acos(-2)); // NaN
+console.log(Math.acos(-1)); // 3.141592653589793
+console.log(Math.acos(0)); // 1.5707963267948966
+console.log(Math.acos(0.5)); // 1.0471975511965979
+console.log(Math.acos(1)); // 0
+console.log(Math.acos(2)); // NaN
+console.log('\n');
+
+
+// Math.acosh(x)
+// Метод Math.acosh() возвращает гиперболический арккосинус числа
+console.log('11) ==== Math.acosh(x) =======');
+console.log(Math.acosh(-2)); // NaN
+console.log(Math.acosh(-1)); // NaN
+console.log(Math.acosh(0)); // NaN
+console.log(Math.acosh(0.5)); // NaN
+console.log(Math.acosh(1)); // 0
+console.log(Math.acosh(2)); // 1.3169578969248166
+console.log(Math.acosh(99)); // 5.288241522117258
+console.log('\n');
+
+
+// Math.asin(x)
+// Метод Math.asin() возвращает арксинус числа (в радианах)
+console.log('12) ==== Math.asin(x) =======');
+console.log(Math.asin(-2)); // NaN
+console.log(Math.asin(-1)); // -1.5707963267948966 (-pi/2)
+console.log(Math.asin(0)); // 0
+console.log(Math.asin(0.5)); // 0.5235987755982989
+console.log(Math.asin(1)); // 1.5707963267948966 (pi/2)
+console.log(Math.asin(2)); // NaN
+console.log('\n');
+
+
+// Math.asinh(x)
+// Метод Math.asinh() возвращает гиперболический арксинус числа
+console.log('13) ==== Math.asinh(x) =======');
+console.log(Math.asinh(-99)); // -5.288292537319899
+console.log(Math.asinh(-2)); // -1.4436354751788103
+console.log(Math.asinh(-1)); // -0.881373587019543
+console.log(Math.asinh(0)); // 0
+console.log(Math.asinh(0.5)); // 0.48121182505960347
+console.log(Math.asinh(1)); // 0.881373587019543
+console.log(Math.asinh(2)); // 1.4436354751788103
+console.log(Math.asinh(99)); // 5.288292537319899
 console.log('\n');
