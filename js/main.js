@@ -119,3 +119,74 @@ console.log(Math.asinh(1)); // 0.881373587019543
 console.log(Math.asinh(2)); // 1.4436354751788103
 console.log(Math.asinh(99)); // 5.288292537319899
 console.log('\n');
+
+
+// Math.atan(x)
+// Метод Math.atan() возвращает арктангенс числа (в радианах)
+console.log('14) ===== Math.atan() ======')
+console.log(Math.atan(3)); // 1.2490457723982544
+console.log(Math.atan(2)); // 1.1071487177940904
+console.log(Math.atan(1)); // 0.7853981633974483
+console.log(Math.atan(0)); // 0
+console.log(Math.atan(-1)); // -0.7853981633974483
+console.log('\n');
+
+
+// Math.atan2(y, x)
+// Метод Math.atan2() возвращает числовое значение от -π до π, представляющее угол тета точки (x, y). Это выраженный в радианах угол, отсчитываемый против часовой стрелки от положительного направления оси X до точки (x, y). Обратите внимание, что первым в метод передаётся координата y, а только вторым — координата x. В метод Math.atan2() аргументы x и y передаются по отдельности, в то время, как в метод Math.atan() передаётся отношение этих двух аргументов.
+console.log('15) ===== Math.atan2() ======');
+console.log(Math.atan2(0, 0)); // 0
+console.log(Math.atan2(90, 0)); // 1.5707963267948966
+console.log(Math.atan2(0, 90)); // 0
+console.log(Math.atan2(90, 15)); // 1.4056476493802699
+console.log(Math.atan2(15, 90)); // 0.16514867741462683
+console.log('\n');
+
+
+// Math.atanh(x)
+// Метод Math.atanh() возвращает гиперболический арктангенс числа
+console.log('16) ===== Math.atanh() ======');
+console.log(Math.atanh(-2)); // NaN
+console.log(Math.atanh(-1)); // -Infinity
+console.log(Math.atanh(-0.5)); // -0.5493061443340548
+console.log(Math.atanh(0)); // 0
+console.log(Math.atanh(0.5)); // 0.5493061443340548
+console.log(Math.atanh(1)); // Infinity
+console.log(Math.atanh(1.01)); // NaN
+console.log(Math.atanh(2)); // NaN
+console.log('\n');
+
+
+// Math.cbrt(x)
+// Метод Math.cbrt() возвращает кубический корень числа
+console.log('17) ===== Math.cbrt() ======');
+console.log(Math.cbrt(-1)); // -1
+console.log(Math.cbrt(0)); // 0
+console.log(Math.cbrt(1)); // 1
+console.log(Math.cbrt(2)); // 1.2599210498948734
+console.log(Math.cbrt(125)); // 5
+console.log('\n');
+
+
+// Math.ceil(x)
+// Метод Math.ceil() - округление вверх. Округляет аргумент до ближайшего большего целого.
+console.log('18) ===== Math.ceil() ======');
+console.log(Math.ceil(.95)); // 1
+console.log(Math.ceil(4)); // 4
+console.log(Math.ceil(7.004)); // 8
+console.log(Math.ceil(-0.95)); // -0
+console.log(Math.ceil(-4)); // -4
+console.log(Math.ceil(-7.004)); // -7
+console.log('\n')
+
+
+// Math.clz32(x)
+// Метод Math.clz32() возвращает количество ведущих нулевых битов в 32-битном двоичном представлении числа. Если значение x не является числом, оно будет сначала преобразовано в число, а потом в 32-битное беззнаковое целое число. Если преобразованое 32-битное беззнаковое целое число равно 0, метод вернёт 32, поскольку все биты в числе равны 0.
+console.log('19) ===== Math.clz32() ======');
+console.log(Math.clz32(1)); // 31
+console.log(Math.clz32(1000)); // 22
+console.log(Math.clz32()); // 32
+console.log(Math.clz32(true)); // 31
+console.log(Math.clz32(3.5)); // 30
+console.log('\n');
+
