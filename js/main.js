@@ -177,7 +177,7 @@ console.log(Math.ceil(7.004)); // 8
 console.log(Math.ceil(-0.95)); // -0
 console.log(Math.ceil(-4)); // -4
 console.log(Math.ceil(-7.004)); // -7
-console.log('\n')
+console.log('\n');
 
 
 // Math.clz32(x)
@@ -190,3 +190,139 @@ console.log(Math.clz32(true)); // 31
 console.log(Math.clz32(3.5)); // 30
 console.log('\n');
 
+
+// Math.cos(x)
+// Метод Math.cos() возвращает косинус числа.
+console.log('20) ===== Math.cos() ======');
+console.log(Math.cos(1)); // 0.5403023058681398
+console.log(Math.cos(1000)); // 0.562379076290703
+console.log(Math.cos(0)); // 1
+console.log(Math.cos()); // NaN
+console.log(Math.cos(true)); // 0.5403023058681398
+console.log(Math.cos(3.5)); // -0.9364566872907963
+console.log('\n');
+
+
+// Math.cosh(x)
+// Метод Math.cosh() возвращает гиперболический косинус числа
+console.log('21) ===== Math.cosh() ======');
+console.log(Math.cosh(-2)); // 3.7621956910836314
+console.log(Math.cosh(-1)); // 1.5430806348152437
+console.log(Math.cosh(-0.5)); // 1.1276259652063807
+console.log(Math.cosh(0)); // 1
+console.log(Math.cosh(0.5)); // 1.1276259652063807
+console.log(Math.cosh(1)); // 1.5430806348152437
+console.log(Math.cosh(1.01)); // 1.5549099972942197
+console.log(Math.cosh(2)); // 3.7621956910836314
+console.log('\n');
+
+
+// Math.exp(x)
+// Метод Math.exp() возвращает значение выражения e ** x, где x — аргумент метода, а e — число Эйлера, основание натурального логарифма.
+console.log('22) ===== Math.exp() ======');
+console.log(Math.exp(-1)); // 0.36787944117144233
+console.log(Math.exp(0)); // 1
+console.log(Math.exp(1)); // 2.718281828459045
+console.log('\n');
+
+
+// Math.expm1(x)
+// Метод Math.expm1() возвращает значение выражения (e ** x) - 1, где x — аргумент метода, а e — число Эйлера, основание натурального логарифма.
+console.log('23) ===== Math.expm1() ======');
+console.log(Math.expm1(-1)); // -0.6321205588285577
+console.log(Math.expm1(0)); // 0
+console.log(Math.expm1(1)); // 1.718281828459045
+console.log('\n');
+
+
+// Math.floor(x)
+// Метод Math.floor() - округление вниз. Округляет аргумент до ближайшего меньшего целого.
+console.log('24) ===== Math.floor() ======');
+console.log(Math.floor(.95)); // 0
+console.log(Math.floor(4)); // 4
+console.log(Math.floor(7.004)); // 7
+console.log(Math.floor(-0.95)); // -1
+console.log(Math.floor(-4)); // -4
+console.log(Math.floor(-7.004)); // -8
+console.log('\n');
+
+
+// Math.fround(x)
+// Метод Math.fround() возвращает ближайшее число с плавающей запятой одинарной точности, представляющее указанное число.
+console.log('25) ===== Math.fround() ======');
+console.log(Math.fround(-1.5)); // -1.5
+console.log(Math.fround(0)); // 0
+console.log(Math.fround(1.1)); // 1.100000023841858
+console.log(Math.fround(1)); // 1
+console.log(Math.fround(1.337)); // 1.3370000123977661
+console.log(Math.fround(1.5)); // 1.5
+console.log(Math.fround(NaN)); // NaN
+console.log('\n');
+
+
+// Math.hypot(value1, value2, ...)
+// Метод Math.hypot() возвращает квадратный корень суммы квадратов своих аргументов
+console.log('26) ===== Math.hypot() ======');
+console.log(Math.hypot(3, 4));  // 5
+console.log(Math.hypot(3, 4, 5)); // 7.0710678118654755
+console.log(Math.hypot());  // 0
+console.log(Math.hypot(NaN)); // NaN
+console.log(Math.hypot(3, 4, 'foo')); // NaN
+console.log(Math.hypot(3, 4, '5')); // 7.0710678118654755
+console.log(Math.hypot(-3)); // 3
+console.log('\n');
+
+
+// Math.imul(a, b)
+// Метод Math.imul() возвращает результат перемножения в стиле C двух 32-битных чисел.
+console.log('27) ===== Math.inul() ======');
+console.log(Math.imul(2, 4)); // 8
+console.log(Math.imul(-1, 8)); // -8
+console.log(Math.imul(-2, -2)); // 4
+console.log(Math.imul(0xffffffff, 5)); // -5
+console.log(Math.imul(0xfffffffe, 5)); // -10
+console.log('\n');
+
+
+// Math.log(x)
+// Метод Math.log() возвращает натуральный (по основанию e) логарифм числа,
+console.log('28) ===== Math.log() ======');
+console.log(Math.log(-1)); // NaN, выход за пределы диапазона
+console.log(Math.log(0)); // -Infinity
+console.log(Math.log(1)); // 0
+console.log(Math.log(10)); // 2.302585092994046
+console.log('\n');
+
+
+// Math.log10(x)
+// Метод Math.log10() возвращает десятичный (по основанию 10) логарифм числа,
+console.log('29) ===== Math.log10() ======');
+console.log(Math.log10(-1)); // NaN
+console.log(Math.log10(0)); // -Infinity
+console.log(Math.log10(1)); // 0
+console.log(Math.log10(2)); // 0.3010299956639812
+console.log(Math.log10(10)); // 1
+console.log(Math.log10(1000)); // 3
+console.log('\n');
+
+
+// Math.log1p(x)
+// Метод Math.log1p() возвращает натуральный (по основанию e) логарифм 1 + числа
+console.log('30) ===== Math.log1p() ======');
+console.log(Math.log1p(1)); // 0.6931471805599453
+console.log(Math.log1p(0)); // 0
+console.log(Math.log1p(-1)); // -Infinity
+console.log(Math.log1p(-2)); // NaN
+console.log('\n');
+
+
+// Math.log2(x)
+// Метод Math.log2() возвращает двоичный (по основанию 2) логарифм числа
+console.log('31) ===== Math.log2() ======');
+console.log(Math.log2(3)); // 1.584962500721156
+console.log(Math.log2(2)); // 1
+console.log(Math.log2(1)); // 0
+console.log(Math.log2(0)); // -Infinity
+console.log(Math.log2(-2)); // NaN
+console.log(Math.log2(1024)); // 10
+console.log('\n');
