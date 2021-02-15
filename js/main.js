@@ -326,3 +326,134 @@ console.log(Math.log2(0)); // -Infinity
 console.log(Math.log2(-2)); // NaN
 console.log(Math.log2(1024)); // 10
 console.log('\n');
+
+
+// Math.max(value1, value2, ...)
+// Метод Math.max() возвращает наибольшее из нуля или более чисел.
+console.log('32) ===== Math.max() ======');
+console.log(Math.max(1, 2, 3)); // 3
+console.log(Math.max(-1, -2, -3)); // -1
+console.log('\n');
+
+
+// Math.min(value1, value2, ...)
+// Метод Math.min() возвращает наименьшее из нуля или более чисел.
+console.log('33) ===== Math.min() ======');
+console.log(Math.min(1, 2, 3)); // 1
+console.log(Math.min(-1, -2, -3)); // -3
+console.log('\n');
+
+
+// Math.pow(base, exponent)
+// Метод Math.pow() возвращает основание, возведённое в степень показатель, то есть, значение выражения основание ** показатель.
+console.log('34) ===== Math.pow() ======');
+console.log(Math.pow(2, 4)); // 16
+console.log(Math.pow(5, 2)); // 25
+console.log(Math.pow(5, -2)); // 0.04
+console.log(Math.pow(2, 0))
+console.log('\n');
+
+
+// Math.random()
+// Метод Math.random() возвращает псевдослучайное число с плавающей запятой из диапазона [0, 1), то есть, от 0 (включительно) до 1 (но не включая 1), которое затем можно отмасштабировать до нужного диапазона. Реализация сама выбирает начальное зерно для алгоритма генерации случайных чисел; оно не может быть выбрано или сброшено пользователем
+console.log('35) ===== Math.random() ======');
+for (let i = 0; i < 6; i++) {
+    console.log(Math.random());
+}
+console.log('\n');
+// выведет 6 раз рандомные числа от 0 до 0.9999999, при каждом вызове for будут разные числа
+// 0.8902417017916495
+// 0.21563974086214976
+// 0.501614371655571
+// 0.8752863813705931
+// 0.4317619870358562
+// 0.9837344238830144
+
+
+// Math.round(x)
+// Метод Math.round() возвращает число, округлённое к ближайшему целому. Если дробная часть числа больше, либо равна 0,5, аргумент будет округлён до ближайшего большего целого. Если дробная часть числа меньше 0,5, аргумент будет округлён до ближайшего меньшего целого.
+console.log('36) ===== Math.round() =======');
+console.log(Math.round(20.49)); // 20
+console.log(Math.round(20.5)); // 21
+console.log(Math.round(-20.5)); // -20
+console.log(Math.round(-20.51)); // -21
+console.log('\n');
+
+
+// Math.sign(x)
+// Метод Math.sign() возвращает знак числа, указывающий на то, является ли число отрицательным, положительным или нулём. Метод может вернуть одно из пяти значений: 1, -1, 0, -0 и NaN, которые представляют, соответственно «положительное число», «отрицательное число», «положительный ноль», «отрицательный ноль» и NaN.
+console.log('37) ===== Math.sign() =======');
+console.log(Math.sign(3)); // 1
+console.log(Math.sign(-3)); // -1
+console.log(Math.sign('-3')); // -1
+console.log(Math.sign(0)); // 0
+console.log(Math.sign(-0)); // -0
+console.log(Math.sign(NaN)); // NaN
+console.log(Math.sign('foo')); // NaN
+console.log(Math.sign()); // NaN
+console.log('\n');
+
+
+// Math.sin(x)
+// Метод Math.sin() возвращает синус числа. Метод Math.sin() возвращает числовое значение от -1 до 1, которое представляет синус переданного (в радианах) угла.
+console.log('38) ===== Math.sin() =======');
+console.log(Math.sin(0)); // 0
+console.log(Math.sin(1)); // 0.8414709848078965
+console.log(Math.sin(-12)); // 0.5365729180004349
+console.log(Math.sin(12)); // -0.5365729180004349
+console.log('\n');
+
+
+// Math.sinh(x)
+// Метод Math.sinh() возвращает гиперболический синус числа
+console.log('39) ===== Math.sinh() =======');
+console.log(Math.sinh(0)); // 0
+console.log(Math.sinh(1)); // 1.1752011936438014
+console.log(Math.sinh(-12)); // -81377.39570642984
+console.log(Math.sinh(12)); // 81377.39570642984
+console.log('\n');
+
+
+// Math.sqrt(x)
+// Метод Math.sqrt() возвращает квадратный корень числа. Если число отрицательное, то вернется NaN.
+console.log('40) ===== Math.sqrt() =======');
+console.log(Math.sqrt(0)); // 0
+console.log(Math.sqrt(1)); // 1
+console.log(Math.sqrt(-12)); // NaN
+console.log(Math.sqrt(16)); // 4
+
+
+// Math.tan(x)
+// Метод Math.tan() возвращает тангенс числа.
+console.log('41) ===== Math.tan() =======');
+console.log(Math.tan(0)); // 0
+console.log(Math.tan(1)); // 1.5574077246549023
+console.log(Math.tan(-12)); // 0.6358599286615808
+console.log(Math.tan(16)); // 0.3006322420239034
+console.log(Math.tan(Infinity)); // NaN
+console.log('\n');
+
+
+// Math.tanh(x)
+// Метод Math.tanh() возвращает гиперболический тангенс числа
+console.log('42) ===== Math.tanh() =======');
+console.log(Math.tanh(0)); // 0
+console.log(Math.tanh(Infinity)); // 1
+console.log(Math.tanh(1)); // 0.7615941559557649
+console.log(Math.tanh(12)); // 0.9999999999244973
+console.log(Math.tanh(-12)); // -0.9999999999244973
+console.log('\n');
+
+
+// Math.trunc(x)
+// Функция Math.trunc() возвращает целую часть числа путём удаления всех дробных знаков.
+console.log('43) ===== Math.trunc() =======');
+console.log(Math.trunc(13.37)); // 13
+console.log(Math.trunc(42.84)); // 42
+console.log(Math.trunc(0.123)); //  0
+console.log(Math.trunc(-0.123)); // -0
+console.log(Math.trunc('-1.123')); // -1
+console.log(Math.trunc(NaN)); // NaN
+console.log(Math.trunc('foo')); // NaN
+console.log(Math.trunc()); // NaN
+console.log('\n');
