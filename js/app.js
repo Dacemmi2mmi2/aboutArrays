@@ -62,18 +62,3 @@ htmlElements.main.addEventListener('click', event => {
     }
     event.target.closest('div.openBlockNavigation') ? positionBlockNav(0) : '';
 });
-
-
-
-// let arr = [10, 1, 2, 3, 4, 6, 7, 70, 8];
-
-// function checkNumbers (numbers)
-// {
-//     let num = [];
-//     for (let i = 1; i < numbers.length; i++){
-//         numbers[i] < numbers[i-1] ? num.push(numbers[i-1]) : '';
-//     }
-//     return console.log(num);
-// }
-
-// checkNumbers(arr)
