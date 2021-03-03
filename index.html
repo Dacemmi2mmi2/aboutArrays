@@ -20,6 +20,7 @@
                     <p id="aboutNumber">Number</p>
                     <p id="aboutString">String</p>
                     <p id="aboutBigInt">BigInt</p>
+                    <p id="aboutBoolean">Boolean</p>
                     <p id="aboutMath">Math</p>
                 </code>
             </div>
@@ -579,6 +580,25 @@
                     </p>
                 </code>
             </div>
+            <div class="navigationBoolean nav">
+                <code>
+                    <p>
+                        <a href="#Boolean_toSourse">
+                            <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#Boolean_toString">
+                            <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#Boolean_valueOf">
+                            <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype">prototype</span><span class="whiteColor">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
+                        </a>
+                    </p>
+                </code>
+            </div>
             <div class="navigationMath nav">
                 <code>
                     <p>
@@ -1054,6 +1074,9 @@
                         </p>
                         <p>
                             <span class="greenColor">// заполняет все элементы массива от начального (start) до конечного (end) индексов одним значением (value)</span>
+                        </p>
+                        <p>
+                            <span class="redColor">// mutable</span>
                         </p>
                         <p>
                             <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">([</span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">2</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">, </span><span class="lightGreenColor">4</span><span class="whiteColor">, </span><span class="lightGreenColor">5</span><span class="whiteColor">].</span><span class="yellowColor">fill</span><span class="whiteColor">(</span><span class="lightGreenColor">34</span><span class="whiteColor">, </span><span class="lightGreenColor">1</span><span class="whiteColor">, </span><span class="lightGreenColor">3</span><span class="whiteColor">));</span> <span class="greenColor"> // [1, 34, 34, 4, 5]</span>
@@ -3840,6 +3863,77 @@
                     </code>
                 </section>
             </div>
+            <div class="contentAboutBoolean textContent">
+                <section id="Boolean_toSourse" class="Boolean_toSourse">
+                    <h2>
+                        <code>
+                            1) <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toSourse</span><span class="whiteColor">()</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// Boolean.prototype.toSourse()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод toSource() возвращает строку, представляющую исходный код объекта. Этот метод обычно вызывается внутри движка JavaScript, а не явно в коде.</span>
+                        </p>
+                        <p>
+                            <span class="yellowColor">// Эта возможность не является стандартной и стандартизировать её пока никто не собирается. Не используйте её на сайтах, смотрящих во внешний мир: она будет работать не у всех пользователей. Также могут присутствовать большие несовместимости между реализациями и её поведение может в будущем измениться.</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="Boolean_toString" class="Boolean_toString">
+                    <h2>
+                        <code>
+                            2) <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">toString</span><span class="whiteColor">()</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// Boolean.prototype.toString()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод toString() возвращает строковое представление указанного объекта Boolean.</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">let </span><span class="skyBlueColor">flag </span><span class="whiteColor">= </span><span class="blueFnArgColor">new </span><span class="blueGreenColor">Boolean</span><span class="whiteColor">(</span><span class="blueFnArgColor">true</span><span class="whiteColor">);</span>    
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">flag</span><span class="whiteColor">.</span><span class="yellowColor">toString</span><span class="whiteColor">());</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="blueFnArgColor">typeof </span><span class="skyBlueColor">flag</span><span class="whiteColor">.</span><span class="yellowColor">toString</span><span class="whiteColor">());</span><span class="greenColor"> // string</span>
+                        </p>
+                    </code>
+                </section>
+                <section id="Boolean_valueOf" class="Boolean_valueOf">
+                    <h2>
+                        <code>
+                            3) <span class="blueGreenColor">Boolean</span><span class="whiteColor">.</span><span class="bluePrototype hide">prototype</span><span class="whiteColor hide">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">()</span>
+                        </code>
+                    </h2>
+                    <code>
+                        <p>
+                            <span class="greenColor">// Boolean.prototype.valueOf()</span>
+                        </p>
+                        <p>
+                            <span class="greenColor">// Метод valueOf() объекта Boolean возвращает примитивное значение объекта или литерала логического типа. Этот метод обычно вызывается внутри движка JavaScript, а не явно в коде.</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">let </span><span class="skyBlueColor">a </span><span class="whiteColor">= </span><span class="blueFnArgColor">new </span><span class="blueGreenColor">Boolean</span><span class="whiteColor">(</span><span class="blueFnArgColor">true</span><span class="whiteColor">);</span>
+                        </p>
+                        <p>
+                            <span class="blueFnArgColor">let </span><span class="skyBlueColor">b </span><span class="whiteColor">= </span><span class="blueFnArgColor">new </span><span class="blueGreenColor">Boolean</span><span class="whiteColor">());</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">a</span><span class="whiteColor">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // true</span>
+                        </p>
+                        <p>
+                            <span class="skyBlueColor">console</span><span class="whiteColor">.</span><span class="yellowColor">log</span><span class="whiteColor">(</span><span class="skyBlueColor">b</span><span class="whiteColor">.</span><span class="yellowColor">valueOf</span><span class="whiteColor">());</span><span class="greenColor"> // false</span>
+                        </p>
+                    </code>
+                </section>
+            </div>
             <div class="contentAboutMath textContent">
                 <section id="Math_E" class="Math_E">
                     <h2>
@@ -5103,6 +5197,6 @@
         </div>
     </main>
     <script src="js/app.js"></script>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
 </body>
 </html>
