@@ -75,11 +75,7 @@ body
 }
 
 
-.navigationString,
-.navigationArray,
-.navigationNumber,
-.navigationBigInt,
-.navigationMath
+.nav
 {
     position: absolute;
     transition: left 1s ease-in-out;
@@ -112,11 +108,7 @@ body
 }
 
 
-.contentAboutString,
-.contentAboutArray,
-.contentAboutNumber,
-.contentAboutBigInt,
-.contentAboutMath
+.textContent
 {
     position: absolute;
     left: 150%;
@@ -124,13 +116,9 @@ body
     background-color: #1e1e1e;
     transition: left .6s ease-in-out;
 }
-/* .contentAboutMath{left: 0}; */
 
-.contentAboutString section,
-.contentAboutArray section,
-.contentAboutNumber section,
-.contentAboutBigInt section,
-.contentAboutMath section
+
+.textContent section
 {
     margin: 0 0 50px 0;
     padding: 0 20px 0 20px;
@@ -146,11 +134,7 @@ body
 }
 
 
-.contentAboutArray p,
-.contentAboutString p,
-.contentAboutNumber p,
-.contentAboutBigInt p,
-.contentAboutMath p
+.textContent p
 {
     font-size: 19px;
     line-height: 1.1;
@@ -160,12 +144,7 @@ body
 }
 
 
-.contentAboutArray p.mLeft,
-.contentAboutString p.mLeft,
-.contentAboutNumber p.mLeft,
-.contentAboutBigInt p.mLeft,
-.contentAboutMath p.mLeft
-{margin-left: 30px;}
+.textContent p.mLeft{margin-left: 30px;}
 
 
 .greenColor{color: #6a8a35;}
